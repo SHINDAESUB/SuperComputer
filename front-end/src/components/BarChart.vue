@@ -8,10 +8,7 @@ export default {
   extends: Bar, //차트 종류 ex)bar
   mixins: [ reactiveProp] ,
   props:{
-    chartdata: {
-      type: Object,
-      default: null
-    },
+    chartdata: {},
   },  
   data () {
     return {
@@ -23,7 +20,7 @@ export default {
           scales: {
             yAxes: [{
               ticks: {
-                maxTicksLimit: 4, //눈금 및 격자 선 최대 갯수
+                maxTicksLimit: 3, //눈금 및 격자 선 최대 갯수
                 precision: 0,  // 소수점 표시  
                 beginAtZero: true, // 0 부터 시작 
                 scaleShowLabels:false, 

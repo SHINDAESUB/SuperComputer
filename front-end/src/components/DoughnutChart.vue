@@ -5,6 +5,7 @@ const { reactiveProp } = mixins
 //https://www.chartjs.org/docs/latest/charts/line.html  옵션
 //https://www.chartjs.org/samples/latest/
 
+//https://ayoteralab.tistory.com/entry/Vuejs-16-use-doughnut-chart-with-label-plugin 차트 옵션
 export default {
   extends: Doughnut, //차트 종류 ex)bar
   mixins: [ reactiveProp] ,
@@ -23,8 +24,8 @@ export default {
               display: true,
               position: 'bottom',
             },
-            responsive: true,
-            maintainAspectRatio: false
+            responsive: true, 
+            maintainAspectRatio: false, 
         },
     }
   },

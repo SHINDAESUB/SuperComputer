@@ -1,56 +1,31 @@
 <script>
 // import VueCharts from 'vue-chartjs'
-import { Pie,mixins  } from 'vue-chartjs'
+import { Scatter ,mixins  } from 'vue-chartjs'
 const { reactiveProp } = mixins
 //https://www.chartjs.org/docs/latest/charts/line.html  옵션
 //https://www.chartjs.org/samples/latest/
 
-// let plugin = function(chart) {
-//         let width = chart.chart.width;
-//         let height = chart.chart.height;
-//         let  ctx = chart.chart.ctx;
-
-//         ctx.restore();
-//         let fontSize = (height / 114).toFixed(2);
-//         ctx.font = fontSize + "em sans-serif";
-//         ctx.textBaseline = "middle";
-
-//         let text = 30;
-//         let textX = Math.round((width - ctx.measureText(text).width) / 2);
-//         let textY = height / 1.75;
-
-//          ctx.fillText(text, textX, textY);
-//          ctx.save();
-// }
-
+//https://ayoteralab.tistory.com/entry/Vuejs-16-use-doughnut-chart-with-label-plugin 차트 옵션
 export default {
-  extends: Pie, //차트 종류 ex)bar
+  extends: Scatter , //차트 종류 ex)bar
   mixins: [ reactiveProp] ,
   props:{
-    chartdata: {
-      type: Object,
-      default: null
-    },
-    percent: {
-      type:Number,
-      default: 0
-    }
-
+    chartdata:{},
+    title:''
   },  
   data () {
     return {
       options: {  
             title: {
-                display: true,
-                // text: '5분당 데이터'
+              display: true,
+              text: this.title
             },
             legend: {
-                    display: false
+              display: true,
+              position: 'bottom',
             },
-            responsive: true,
-            maintainAspectRatio: false,
-
-
+            responsive: true, 
+            maintainAspectRatio: false, 
         },
     }
   },

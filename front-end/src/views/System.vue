@@ -8,6 +8,14 @@
           height="450"
         >
           <v-card-text class="pa-6">
+            <HalfDoughnutChart
+              :chart-data="totalColl"
+              height="280"
+            />
+            <v-divder/>
+            <v-divider class="mt-2"></v-divider>
+            <div class="text-center display-1 black--text font-weight-medium mt-5">20 %</div>
+            <div class="text-center title  font-weight-medium mt-2">50 of 100 Reserved</div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -18,7 +26,14 @@
           height="450"
         >
           <v-card-text class="pa-6">
-
+            <HalfDoughnutChart
+              :chart-data="totalColl"
+              height="280"
+            />
+            <v-divder/>
+            <v-divider class="mt-2"></v-divider>
+            <div class="text-center display-1 black--text font-weight-medium mt-5">20 %</div>
+            <div class="text-center title  font-weight-medium mt-2">50 of 100 Reserved</div>
           </v-card-text>
         </v-card>
 
@@ -31,6 +46,14 @@
           height="450"
         >
           <v-card-text class="pa-6">
+            <HalfDoughnutChart
+              :chart-data="totalColl"
+              height="280"
+            />
+            <v-divder/>
+            <v-divider class="mt-2"></v-divider>
+            <div class="text-center display-1 black--text font-weight-medium mt-5">20 %</div>
+            <div class="text-center title  font-weight-medium mt-2">50 of 100 Reserved</div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -43,10 +66,15 @@
           color="white"
           height="450"
         >
-        <DoughnutChart
-          :chart-data="totalColl"
-          height="400"
-        />
+          <v-card-text>
+            <div class=" display-1 black--text font-weight-medium mt-5 ml-6">9567</div>
+            <div class=" subtitle-2  font-weight-medium mt-2 ml-6">50 of 100 Reserved</div>
+            <BarChart
+              class="px-2"
+              :chart-data="crcColl"
+              height="300"
+            />
+          </v-card-text>
 
         </v-card>
       </v-col>
@@ -56,8 +84,9 @@
           color="white"
           height="450"
         >
-          <PieChart
-            :chart-data="totalColl"
+          <HorizontalBar
+            class="pt-3 px-2 "
+            :chart-data="hColl"
             height="400"
           />
 
@@ -69,7 +98,9 @@
 
 <script>
 import LineChart from '../components/LineChart.vue'
-import DoughnutChart from '../components/Pie.vue'
+import HalfDoughnutChart from '../components/HalfDoughnutChart.vue'
+import HorizontalBar from '../components/HorizontalBar.vue'
+import BarChart from '../components/BarChart.vue'
 
 
 export default {
@@ -77,23 +108,53 @@ export default {
 
   components: {
     LineChart,
-    DoughnutChart
+    HalfDoughnutChart,
+    BarChart,
+    HorizontalBar
   },
 
   data () {
     return {
       totalColl:{},
+
+      crcColl : {
+        labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+        datasets: [
+            {
+              label: ['x','y'],
+              backgroundColor: '#00897B ',
+              data: [ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+            }
+        ],
+
+      },
+      hColl : {
+        labels: ['LATINE','VALUE','CHORO','ADDLE','SCSENS'],
+        datasets: [
+            {
+              label: ['y'],
+              backgroundColor: '#00897B  ',
+              data: [ 14877,23472,18173,21552,29998,6,7,8,9,10,11,12,13,14,15,16,17,18],
+            },
+            {
+              label: ['x'],
+              backgroundColor: '#E0E0E0A1',
+              data: [ 30000-14877,30000-23472,30000-18173,30000-21552,30000-29998,6,7,8,9,10,11,12,13,14,15,16,17,18],
+            },
+        ],
+
+      }
+              
     }
   },
 
-
   mounted(){
     this.totalColl = {
-        labels: ['성공','실패'],
+        labels: ['x','y'],
         datasets: [
             {
-                backgroundColor: ['#4CAF50' ,'#F44336'],
-                data: [ 4 ,3 , 5, 6],
+                backgroundColor: ['#039BE5' ,'#00ACC1','#E0E0E0'],
+                data: [ 4 ,3 ,8],
             }
         ],
     }

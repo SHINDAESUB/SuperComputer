@@ -7,6 +7,7 @@ const { reactiveProp } = mixins
 export default {
   extends: HorizontalBar, //차트 종류 ex)bar
   mixins: [ reactiveProp] ,
+  
   props:{
     chartdata: {
       type: Object,
@@ -25,22 +26,26 @@ export default {
               ticks: {
                 // max: 5,
                 // min: 3,
-                maxTicksLimit: 3,
+                // maxTicksLimit: 3,
                 precision: 1,
                 beginAtZero: false,
                 scaleShowLabels:false,
               },
               gridLines: {
                 display: false
-              }
+              },
+              stacked: true,
             }],
             xAxes: [ {
               gridLines: {
                 display: false
               },
               ticks: {
+                display: false,
+                // maxTicksLimit: 5,
                 scaleShowLabels:false,
-              }
+              },
+              stacked: true,
             }]
           },
           legend: {
@@ -59,7 +64,36 @@ export default {
     }
   },
   mounted () {
-    this.renderChart(this.chartData, this.options)
+    this.addPlugin({
+      id: 'my-plugin',
+      beforeDraw: this.yAxisText
+    })
+    this.renderChart(this.chartData, this.options )
+  },
+
+  methods: {
+//https://stackoverflow.com/questions/62442553/align-data-label-right-horizontal-bar-chart-vue-js
+      yAxisText(chart){
+        var ctx = chart.chart.ctx;
+        ctx.save();
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.font = "14px em sans-serif ";
+        ctx.weight = "bold"
+        ctx.anchor = 'center'
+
+        var xAxis = chart.scales['x-axis-0'];
+        var yAxis = chart.scales["y-axis-0"];
+        yAxis.ticks.forEach((v, i) => {
+          var value = chart.data.datasets[0].data[i];
+          var x = xAxis.getPixelForValue(value) + 22;
+          var y = yAxis.getPixelForTick(i)-5;         
+          ctx.fillText('' + value +'', x, y);
+          
+        });
+      ctx.restore();
+      ctx.save();
+    }
   }
 }
 </script>

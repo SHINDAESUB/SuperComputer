@@ -39,8 +39,8 @@
             </v-list-item-icon>
             <v-list-item-title>Node Control</v-list-item-title>
           </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon to="/report">
+          <v-list-item link to="/report">
+            <v-list-item-icon >
               <v-icon>mdi-file-chart-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Report</v-list-item-title>

@@ -1,5 +1,5 @@
 <template>
-  <v-container class="dashboard d-flex flex-column justify-center  "  >
+  <v-container class="dashboard d-flex flex-column justify-center   "  >
     <v-row >
       <v-col cols="4">
         <v-card
@@ -152,7 +152,7 @@ export default {
 
   components: {
     LineChart,
-    DoughnutChart
+    DoughnutChart,
   },
 
   data () {
