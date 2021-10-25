@@ -292,7 +292,7 @@ export default {
           
           this.idel = result.idel
           this.total = result.total
-          this.persent = ( this.idel / this.total) * 100  
+          this.persent = ( this.total - this.idel / this.total) * 100  
         } catch (e) {
           console.error(e)
         }

@@ -5,12 +5,10 @@ require('dotenv').config()
 
 const router = express.Router()
 
-const xmlFile = fs.readFileSync(`${process.env.FILE_PATH}/ganglia/ganglia.xml` , 'utf8')
-
-const jsonData = JSON.parse(convert.xml2json(xmlFile, {compact: true, spaces: 2}))
-
 router.get("/line" , (req ,res) => {
 
+    const xmlFile = fs.readFileSync(`${process.env.FILE_PATH}/ganglia/ganglia.xml` , 'utf8')
+    const jsonData = JSON.parse(convert.xml2json(xmlFile, {compact: true, spaces: 2}))
     let cluster = jsonData['GANGLIA_XML']['GRID']['CLUSTER']
 
     let csnow = 0
@@ -37,9 +35,10 @@ router.get("/line" , (req ,res) => {
 
 router.get("/bar" , (req ,res) => {
 
+    const xmlFile = fs.readFileSync(`${process.env.FILE_PATH}/ganglia/ganglia.xml` , 'utf8')
+    const jsonData = JSON.parse(convert.xml2json(xmlFile, {compact: true, spaces: 2}))
     let cluster = jsonData['GANGLIA_XML']['GRID']['CLUSTER']
 
- 
     let csnow  = {'cpu': [] , 'user': []}
         thunder = {'cpu': [] , 'user': []} 
 
