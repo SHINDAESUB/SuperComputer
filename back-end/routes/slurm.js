@@ -3,7 +3,7 @@ const fs = require('fs');
 const router = express.Router()
 
 router.get("/nodes" , (req ,res) => {
-    let log = fs.readFileSync('./json/nodes.log', 'utf8').toString().split("\n")
+    let log = fs.readFileSync(`${process.env.FILE_PATH}/nodes.log`, 'utf8').toString().split("\n")
 
     let total = 0
     let idel = 0 
@@ -19,14 +19,14 @@ router.get("/nodes" , (req ,res) => {
 })
 
 router.get("/squeue" , (req ,res) => {
-    let log = fs.readFileSync('./json/squeue.log', 'utf8').toString().split("\n")
+    let log = fs.readFileSync(`${process.env.FILE_PATH}/squeue.log`, 'utf8').toString().split("\n")
 
     let result = {'squeue' : log.length - 2 }
     res.send(result)    
 })
 
 router.get("/runtime" , (req ,res) => {
-    let log = fs.readFileSync('./json/runtime.log', 'utf8').toString().split("\n")
+    let log = fs.readFileSync(`${process.env.FILE_PATH}/runtime.log`, 'utf8').toString().split("\n")
 
     let result = {'runtime' : log[0]}
     res.send(result)   

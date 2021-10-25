@@ -24,9 +24,9 @@
                 <div class="display-3 mt-12 font-weight-bold black--text">50</div>
                 <div class="display-1 ">CHORO</div>
               </v-card-text></v-card>
-<v-divider
-  vertical
-></v-divider>
+              <v-divider
+                vertical
+              ></v-divider>
             <v-card
               class="mx-auto rounded-circle"
               height="250"

@@ -1,9 +1,11 @@
 const express = require('express')
 const fs = require('fs');
 const convert = require('xml-js')
+require('dotenv').config()
+
 const router = express.Router()
 
-const xmlFile = fs.readFileSync('./json/ganglia.xml', 'utf8')
+const xmlFile = fs.readFileSync(`${process.env.FILE_PATH}/ganglia.xml` , 'utf8')
 
 const jsonData = JSON.parse(convert.xml2json(xmlFile, {compact: true, spaces: 2}))
 
