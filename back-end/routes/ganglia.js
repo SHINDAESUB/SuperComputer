@@ -5,7 +5,7 @@ require('dotenv').config()
 
 const router = express.Router()
 
-const xmlFile = fs.readFileSync(`${process.env.FILE_PATH}/ganglia.xml` , 'utf8')
+const xmlFile = fs.readFileSync(`${process.env.FILE_PATH}/ganglia/ganglia.xml` , 'utf8')
 
 const jsonData = JSON.parse(convert.xml2json(xmlFile, {compact: true, spaces: 2}))
 

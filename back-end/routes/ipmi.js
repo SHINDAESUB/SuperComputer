@@ -3,7 +3,7 @@ const fs = require('fs');
 const router = express.Router()
 
 router.get("/power" , (req ,res) => {
-    let log = fs.readFileSync(`${process.env.FILE_PATH}/power.log`, 'utf8').toString().split("\n")
+    let log = fs.readFileSync(`${process.env.FILE_PATH}/ipmi/power.log`, 'utf8').toString().split("\n")
     
     let result = []
     
