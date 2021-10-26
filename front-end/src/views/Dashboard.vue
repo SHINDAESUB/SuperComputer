@@ -102,7 +102,6 @@
           class="elevation-2 rounded-xl"
           color="white"
           height="130"
-          @click="nodes()"
         >
           <v-card-text class="pa-6">
             <v-row no-gutters class="display-1">Total nodes</v-row>
@@ -142,7 +141,7 @@
 import ganglia from '../services/ganglia'
 import ipmi from '../services/ipmi'
 import slurm from '../services/slurm'
-
+import Header from '../components/Header.vue'
 import LineChart from '../components/LineChart.vue'
 import DoughnutChart from '../components/DoughnutChart.vue'
 
@@ -153,6 +152,7 @@ export default {
   components: {
     LineChart,
     DoughnutChart,
+    Header,
   },
 
   data () {
@@ -187,7 +187,7 @@ export default {
       this.squeue()
       this.gangliaLine()
       this.gangliaDoughnut()
-      this.nodes()
+      this.nodes('text')
     },
 
     async runtime(){
@@ -286,9 +286,9 @@ export default {
         }
     },
 
-    async nodes(){
+    async nodes(type){
         try {
-          let result = await slurm.nodes()
+          let result = await slurm.nodes(type)
           
           this.idel = result.idel
           this.total = result.total

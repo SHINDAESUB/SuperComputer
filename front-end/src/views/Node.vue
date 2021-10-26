@@ -72,13 +72,12 @@
 import LineChart from '../components/LineChart.vue'
 import PieChart from '../components/Pie.vue'
 
-
 export default {
   name: 'Home',
 
   components: {
     LineChart,
-    PieChart
+    PieChart,
   },
 
   data () {

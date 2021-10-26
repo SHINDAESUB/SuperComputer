@@ -1,6 +1,6 @@
 <template>
-  <v-container class="system d-flex flex-column justify-center  "  >
-    <v-row >
+  <v-container class="system"  >
+    <v-row class="" >
       <v-col cols="4">
         <v-card
           class="elevation-2 rounded-xl"
@@ -9,13 +9,14 @@
         >
           <v-card-text class="pa-6">
             <HalfDoughnutChart
-              :chart-data="totalColl"
+              :chart-data="cpuColl"
+              title='CPU Alloc'
               height="280"
             />
             <v-divder/>
             <v-divider class="mt-2"></v-divider>
-            <div class="text-center display-1 black--text font-weight-medium mt-5">20 %</div>
-            <div class="text-center title  font-weight-medium mt-2">50 of 100 Reserved</div>
+            <div class="text-center display-1 black--text font-weight-medium mt-5">{{cpuPersent}} %</div>
+            <div class="text-center title  font-weight-medium mt-2">{{cpuUse}} of {{cpuTotal}} Alloced</div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -27,13 +28,14 @@
         >
           <v-card-text class="pa-6">
             <HalfDoughnutChart
-              :chart-data="totalColl"
+              title='Free mem'
+              :chart-data="freeMemColl"
               height="280"
             />
             <v-divder/>
             <v-divider class="mt-2"></v-divider>
-            <div class="text-center display-1 black--text font-weight-medium mt-5">20 %</div>
-            <div class="text-center title  font-weight-medium mt-2">50 of 100 Reserved</div>
+            <div class="text-center display-1 black--text font-weight-medium mt-5">{{freeMemPersent}} %</div>
+            <div class="text-center title  font-weight-medium mt-2">{{freeMemUse}} of {{freeMemTotal}} GB</div>
           </v-card-text>
         </v-card>
 
@@ -97,11 +99,13 @@
 </template>
 
 <script>
+import ganglia from '../services/ganglia'
+import ipmi from '../services/ipmi'
+import slurm from '../services/slurm'
 import LineChart from '../components/LineChart.vue'
 import HalfDoughnutChart from '../components/HalfDoughnutChart.vue'
 import HorizontalBar from '../components/HorizontalBar.vue'
 import BarChart from '../components/BarChart.vue'
-
 
 export default {
   name: 'Home',
@@ -110,11 +114,21 @@ export default {
     LineChart,
     HalfDoughnutChart,
     BarChart,
-    HorizontalBar
+    HorizontalBar,
   },
 
   data () {
     return {
+      cpuColl:{},
+      cpuTotal: 352,
+      cpuUse:0,
+      cpuPersent:0,
+
+      freeMemColl:{},
+      freeMemTotal: 626,
+      freeMemUse:0,
+      freeMemPersent:0,
+
       totalColl:{},
 
       crcColl : {
@@ -158,7 +172,78 @@ export default {
             }
         ],
     }
+    this.cpuHalfDoughnut('cpu')
+    this.freeHalfDoughnut('free')
+    this.jobHistoryBar('bar')
   },
+
+  methods:{
+    async cpuHalfDoughnut(type){
+      try {
+        let result = await slurm.nodes(type)
+
+        this.cpuUse = result.thunder + result.csnow
+        this.cpuPersent =Math.round((this.cpuUse / this.cpuTotal) * 100)  
+
+        this.cpuColl = {
+          labels: ['Thunder','CSNOW','OTHER'],
+          datasets: [
+            {
+              label: ['Thunder','CSNOW','OTHER'],
+              backgroundColor: ['#039BE5' ,'#00ACC1','#E0E0E0'],
+              data:[ result.thunder , result.csnow ,this.cpuTotal - this.cpuUse ]
+            },
+        ]}
+      } catch (e) {
+        console.error(e)
+      }
+    },
+
+    async freeHalfDoughnut(type){
+      try {
+        let result = await slurm.nodes(type)
+
+        this.freeMemUse = result.use
+        this.freeMemPersent = Math.round((result.use / this.freeMemTotal) * 100)
+
+        this.freeMemColl = {
+          labels: ['USE','FREE'],
+          datasets: [
+            {
+              label: ['USE','FREE'],
+              backgroundColor: ['#039BE5','#E0E0E0'],
+              data:[ this.freeMemUse , this.freeMemTotal - this.freeMemUse  ]
+            },
+        ]}
+      } catch (e) {
+        console.error(e)
+      }
+    },
+
+    async jobHistoryBar(type){
+      try {
+        let result = await slurm.jobHistory(type)
+
+        console.log(result)
+
+        // this.cpuUse = result.thunder + result.csnow
+        // this.cpuPersent =Math.round((this.cpuUse / this.cpuTotal) * 100)  
+
+        // this.cpuColl = {
+        //   labels: ['Thunder','CSNOW','OTHER'],
+        //   datasets: [
+        //     {
+        //       label: ['Thunder','CSNOW','OTHER'],
+        //       backgroundColor: ['#039BE5' ,'#00ACC1','#E0E0E0'],
+        //       data:[ result.thunder , result.csnow ,this.cpuTotal - this.cpuUse ]
+        //     },
+        // ]}
+      } catch (e) {
+        console.error(e)
+      }
+    },
+
+  }
 }
 </script>
 <style lang="scss">

@@ -1,9 +1,9 @@
 import axios from 'axios'
 
 export default {
-    async nodes(){
+    async nodes(type){
         try{
-            const response = await axios.get('/slurm/nodes')        
+            const response = await axios.get(`/slurm/nodes?type=${type}`)        
             return response.data
 
         }catch (e) { 
@@ -24,6 +24,16 @@ export default {
     async runtime(){
         try{
             const response = await axios.get('/slurm/runtime')
+            return response.data
+
+        }catch (e) { 
+            throw e 
+        }
+    },
+
+    async jobHistory(type){
+        try{
+            const response = await axios.get(`/slurm/jobHistory?type=${type}`)
             return response.data
 
         }catch (e) { 

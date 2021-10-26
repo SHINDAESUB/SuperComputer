@@ -1,6 +1,6 @@
 <template>
-  <v-container class="report d-flex flex-row align-center justify-center  "  >
-    <v-row >
+  <v-container class="report"  >
+    <v-row class="d-flex flex-row align-center justify-center ">
       <v-col cols="12">
         <v-card
           class="elevation-2 rounded-xl"
@@ -52,8 +52,6 @@
                 <div class="display-3 mt-12 font-weight-bold black--text">50</div>
                 <div class="display-1 ">SCENS</div>
               </v-card-text></v-card>
-
-
             </v-row>
 
           </v-card-text>
@@ -65,7 +63,6 @@
 
 <script>
 import ScatterChart from '../components/ScatterChart.vue'
-
 
 export default {
   name: 'Report',
