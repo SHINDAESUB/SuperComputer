@@ -9,7 +9,7 @@
           @click="runtime()"
         >
           <v-card-text class="pa-6">
-              <v-row no-gutters class="display-1">Service runtime</v-row>
+              <v-row no-gutters class="display-1">SERVICE RUNTIME</v-row>
               <v-row no-gutters class="display-1 font-weight-black"><v-spacer/>{{time}} min</v-row>
           </v-card-text>
         </v-card>
@@ -22,7 +22,7 @@
           @click="power()"
         >
           <v-card-text class="pa-6">
-              <v-row no-gutters class="display-1">Node start</v-row>
+              <v-row no-gutters class="display-1">NODE START</v-row>
               <v-row>
                 <v-spacer/>
                 <v-btn
@@ -48,7 +48,7 @@
           @click="squeue()"
         >
           <v-card-text class="pa-6">
-              <v-row no-gutters class="display-1">Running jobs</v-row>
+              <v-row no-gutters class="display-1">RUNNING JOBS</v-row>
               <v-row no-gutters class="display-1 font-weight-black"><v-spacer/>{{running}}</v-row>
           </v-card-text>
         </v-card>
@@ -104,7 +104,7 @@
           height="130"
         >
           <v-card-text class="pa-6">
-            <v-row no-gutters class="display-1">Total nodes</v-row>
+            <v-row no-gutters class="display-1">TOTAL NODE</v-row>
             <v-row no-gutters class="display-1 font-weight-black"><v-spacer/>{{total}}</v-row>
           </v-card-text>
         </v-card>
@@ -116,7 +116,7 @@
           height="130"
         >
           <v-card-text class="pa-6">
-            <v-row no-gutters class="display-1">Idel nodes</v-row>
+            <v-row no-gutters class="display-1">IEDL NODES</v-row>
             <v-row no-gutters class="display-1 font-weight-black"><v-spacer/>{{idel}}</v-row>
           </v-card-text>
         </v-card>

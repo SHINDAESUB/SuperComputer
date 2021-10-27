@@ -23,7 +23,28 @@ router.get("/nodes" , (req ,res) => {
             }
             result = {'total' : total > 0 ? total -1 : total  , 'idel' : idel > 0 ? idel -1 : idel }
         break;
-        
+
+        case 'state':
+            str1 = 'State='
+            str2 = ' ThreadsPerCore='
+            let states =[]
+
+            for(i in log){
+                if(log[i].includes('State=')) textArray.push(log[i]) 
+            }
+            textArray.shift()
+
+            for(i in textArray){
+                let textStr1 = textArray[i].indexOf(str1)
+                let textStr2 = textArray[i].indexOf(str2)
+                let state = textArray[i].substring(textStr1 + 6, textStr2)
+                states.push(state)
+            }
+
+            result =states
+
+        break;
+
         case 'cpu':
             str1 = 'CPUAlloc='
             str2 = ' CPUErr='
@@ -44,6 +65,7 @@ router.get("/nodes" , (req ,res) => {
             use = cpu.reduce((stack, current)=>{ return stack + current }, 0);
 
             result = {'csnow': Math.round(cpu[0] + cpu[1]) , 'thunder': Math.round(cpu[2] + cpu[3]) , 'use' : Math.round(use) }
+
         break;
 
         case 'free':
@@ -65,6 +87,7 @@ router.get("/nodes" , (req ,res) => {
             use = free.reduce((stack, current)=>{ return stack + current }, 0);
 
             result = {'use' : Math.round(use/1000) }
+            
         break;
     }
 
@@ -90,46 +113,19 @@ router.get("/jobHistory" , (req ,res) => {
 
     let result = null 
 
-    let history = []
+    let jobs = []
 
     switch( req.query.type ) {
-        case 'bar':
+        case 'system':
             for (let i = 2; i < log.length; i++){
-                // let data = log[i].replace(/(\s*)/g, "");  //모든 공백 제거
                 let data = log[i].split(" ");
                 if(data[0] !== '' && data[0] !== undefined){
-                    history.push({ 'id':Number(data[0]) , 'partition':data[1],'cpu':Number(data[4]) }) 
+                    jobs.push({ 'id':Number(data[0]) , 'partition':data[1],'cpu':Number(data[4]) }) 
                 }
-                
+                result = jobs 
             }
-
-            console.log('history :' ,history )
-
-        break;
-        
-        case 'cpu':
-            str1 = 'CPUAlloc='
-            str2 = ' CPUErr='
-            let cpu =[]
-
-            for(i in log){
-                if(log[i].includes('CPUAlloc')) textArray.push(log[i]) 
-            }
-            textArray.shift()
-
-            for(i in textArray){
-                let textStr1 = textArray[i].indexOf(str1)
-                let textStr2 = textArray[i].indexOf(str2)
-                let freeMem = textArray[i].substring(textStr1 + 9, textStr2)
-                cpu.push(Number(freeMem))
-            }
-
-            use = cpu.reduce((stack, current)=>{ return stack + current }, 0);
-
-            result = {'csnow': Math.round(cpu[0] + cpu[1]) , 'thunder': Math.round(cpu[2] + cpu[3]) , 'use' : Math.round(use) }
         break;
     }
-
     res.send(result)   
 })
 

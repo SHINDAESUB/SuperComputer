@@ -49,8 +49,8 @@ export default {
             }]
           },
           legend: {
-            display: false, /* false = 범례를 숨긴다.  */
-            // position: 'top',
+            display: true, /* false = 범례를 숨긴다.  */
+            position: 'bottom',
             // labels: {
             //     fontSize: 12,
             //     // fontFamily: 'sans-serif',
@@ -64,10 +64,10 @@ export default {
     }
   },
   mounted () {
-    this.addPlugin({
-      id: 'my-plugin',
-      beforeDraw: this.yAxisText
-    })
+    // this.addPlugin({
+    //   id: 'my-plugin',
+    //   beforeDraw: this.yAxisText
+    // })
     this.renderChart(this.chartData, this.options )
   },
 
