@@ -1,5 +1,3 @@
-const { text } = require('express');
-const e = require('express');
 const express = require('express')
 const fs = require('fs');
 const router = express.Router()
@@ -15,13 +13,13 @@ router.get("/nodes" , (req ,res) => {
     switch( req.query.type ) {
         case 'text':
             let total = 0
-            let idel = 0
+            let idle = 0
 
             for(i in log){
                 if(log[i].includes('NodeName')) total = ++ total 
-                if(log[i].includes('IDLE')) idel =  ++ idel
+                if(log[i].includes('IDLE')) idle =  ++ idle
             }
-            result = {'total' : total > 0 ? total -1 : total  , 'idel' : idel > 0 ? idel -1 : idel }
+            result = {'total' : total > 0 ? total -1 : total  , 'idle' : idle > 0 ? idle -1 : idle }
         break;
 
         case 'state':
@@ -87,7 +85,7 @@ router.get("/nodes" , (req ,res) => {
             use = free.reduce((stack, current)=>{ return stack + current }, 0);
 
             result = {'use' : Math.round(use/1000) }
-            
+
         break;
     }
 

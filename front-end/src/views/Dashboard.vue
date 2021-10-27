@@ -116,8 +116,8 @@
           height="130"
         >
           <v-card-text class="pa-6">
-            <v-row no-gutters class="display-1">IEDL NODES</v-row>
-            <v-row no-gutters class="display-1 font-weight-black"><v-spacer/>{{idel}}</v-row>
+            <v-row no-gutters class="display-1">IDLE NODES</v-row>
+            <v-row no-gutters class="display-1 font-weight-black"><v-spacer/>{{idle}}</v-row>
           </v-card-text>
         </v-card>
 
@@ -168,7 +168,7 @@ export default {
       doughnutChartCsnow: {},
       doughnutChartThunder: {},
     
-      idel:0,
+      idle:0,
       total:0,
       persent:0,
 
@@ -290,9 +290,9 @@ export default {
         try {
           let result = await slurm.nodes(type)
           
-          this.idel = result.idel
+          this.idle = result.idle
           this.total = result.total
-          this.persent = ( (this.total - this.idel) / this.total) * 100  
+          this.persent = ( (this.total - this.idle) / this.total) * 100  
         } catch (e) {
           console.error(e)
         }
