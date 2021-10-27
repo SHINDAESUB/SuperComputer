@@ -19,7 +19,6 @@
           class="elevation-2 rounded-xl"
           color="white"
           height="130"
-          @click="power()"
         >
           <v-card-text class="pa-6">
               <v-row no-gutters class="display-1">NODE START</v-row>
@@ -183,7 +182,7 @@ export default {
   methods:{
     getData(){
       this.runtime()
-      this.power()
+      this.power('dashboard')
       this.squeue()
       this.gangliaLine()
       this.gangliaDoughnut()
@@ -199,9 +198,9 @@ export default {
         }
     },
 
-    async power(){
+    async power(type){
         try {
-          let result = await ipmi.power()
+          let result = await ipmi.power(type)
           this.start = result 
         } catch (e) {
           console.error(e)
