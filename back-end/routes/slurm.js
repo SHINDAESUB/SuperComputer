@@ -118,7 +118,7 @@ router.get("/jobHistory" , (req ,res) => {
             for (let i = 2; i < log.length; i++){
                 let data = log[i].split(" ");
                 if(data[0] !== '' && data[0] !== undefined){
-                    jobs.push({ 'id':Number(data[0]) , 'partition':data[1],'cpu':Number(data[4]) }) 
+                    jobs.push({ 'id':Number(data[0]) , 'partition':data[1],'cpu':Number(data[4]) ,'second': Math.round(Number(data[4]) / Number(data[0]))  }) 
                 }
                 result = jobs 
             }

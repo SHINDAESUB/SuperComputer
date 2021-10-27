@@ -7,7 +7,7 @@
           <v-expansion-panel-header >
             CSNOW 01     
             <v-spacer/>
-            <v-col class="ma-0 pa-0" cols='1'> <v-chip :color="nodeStateStyle(nodeStates[0])">{{nodeStates[0]}}</v-chip></v-col>
+            <v-col class="ma-0 pa-0" cols='1'> <v-chip dark :color="nodeStateStyle(nodePowers[2])">{{nodePowers[2]}}</v-chip></v-col>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
               <v-row>
@@ -17,36 +17,35 @@
                   md="6"
                 >
                   <v-radio-group
-                    v-model="nodePowers[2]"
+                    v-model="csnow1"
                     column
-                    
                   >
                     <v-radio
                       label="POWER ON"
-                      color="#E53935"
+                      color="#43A047"
                       value="on"
-                      @click="powerUpdate('snow01' ,nodePowers[2])"
                     ></v-radio>
                     <v-radio
                       label="POWER OFF"
                       color="#E0E0E0"
                       value="off"
-                      @click="powerUpdate('snow01' ,nodePowers[2])"
                     ></v-radio>
                     <v-radio
                       label="HARDWARE RESET"
                       color="#1E88E5"
                       value="reset"
-                      @click="powerUpdate('snow01' ,nodePowers[2])"
                     ></v-radio>
                     <v-radio
                       label="SOFTWARE RESET(cycle)"
                       color="#FDD835"
                       value="cycle"
-                      @click="powerUpdate('snow01' ,nodePowers[2])"
                     ></v-radio>
                   </v-radio-group>
                 </v-col>
+            </v-row>
+            <v-row class="my-1">
+              <v-spacer/>
+              <v-btn tile color="primary"  @click="powerUpdate('snow01' ,csnow1)">Apply</v-btn>
             </v-row>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -55,7 +54,7 @@
           <v-expansion-panel-header>
             CSNOW 02 
             <v-spacer/>
-            <v-col class="ma-0 pa-0" cols='1'> <v-chip :color="nodeStateStyle(nodeStates[0])">{{nodeStates[0]}}</v-chip></v-col>
+            <v-col class="ma-0 pa-0" cols='1'> <v-chip dark :color="nodeStateStyle(nodePowers[3])">{{nodePowers[3]}}</v-chip></v-col>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
               <v-row>
@@ -65,35 +64,35 @@
                   md="6"
                 >
                   <v-radio-group
-                    v-model="nodePowers[3]"
+                    v-model="csnow2"
                     column
                   >
                     <v-radio
                       label="POWER ON"
-                      color="#E53935"
+                      color="#43A047"
                       value="on"
-                      @click="powerUpdate('snow02' ,nodePowers[3])"
                     ></v-radio>
                     <v-radio
                       label="POWER OFF"
                       color="#E0E0E0"
                       value="off"
-                      @click="powerUpdate('snow02' ,nodePowers[3])"
                     ></v-radio>
                     <v-radio
                       label="HARDWARE RESET"
                       color="#1E88E5"
                       value="reset"
-                      @click="powerUpdate('snow02' ,nodePowers[3])"
                     ></v-radio>
                     <v-radio
                       label="SOFTWARE RESET(cycle)"
                       color="#FDD835"
                       value="cycle"
-                      @click="powerUpdate('snow02' ,nodePowers[3])"
                     ></v-radio>
                   </v-radio-group>
                 </v-col>
+            </v-row>
+            <v-row class="my-1">
+              <v-spacer/>
+              <v-btn tile color="primary"  @click="powerUpdate('snow02' ,csnow2)">Apply</v-btn>
             </v-row>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -102,7 +101,7 @@
           <v-expansion-panel-header>
             THUNDER 01   
             <v-spacer/>
-            <v-col class="ma-0 pa-0" cols='1'> <v-chip :color="nodeStateStyle(nodeStates[0])">{{nodeStates[0]}}</v-chip></v-col>
+            <v-col class="ma-0 pa-0" cols='1'> <v-chip dark :color="nodeStateStyle(nodePowers[0])">{{nodePowers[0]}}</v-chip></v-col>
           </v-expansion-panel-header>
           <v-expansion-panel-content>
               <v-row>
@@ -112,35 +111,35 @@
                   md="6"
                 >
                   <v-radio-group
-                    v-model="nodePowers[0]"
+                    v-model="thunder1"
                     column
                   >
                     <v-radio
                       label="POWER ON"
-                      color="#E53935"
+                      color="#43A047"
                       value="on"
-                      @click="powerUpdate('thunder01' ,nodePowers[0])"
                     ></v-radio>
                     <v-radio
                       label="POWER OFF"
                       color="#E0E0E0"
                       value="off"
-                      @click="powerUpdate('thunder01' ,nodePowers[0])"
                     ></v-radio>
                     <v-radio
                       label="HARDWARE RESET"
                       color="#1E88E5"
                       value="reset"
-                      @click="powerUpdate('thunder01' ,nodePowers[0])"
                     ></v-radio>
                     <v-radio
                       label="SOFTWARE RESET(cycle)"
                       color="#FDD835"
                       value="cycle"
-                      @click="powerUpdate('thunder01' ,nodePowers[0])"
                     ></v-radio>
                   </v-radio-group>
                 </v-col>
+            </v-row>
+            <v-row class="my-1">
+              <v-spacer/>
+              <v-btn tile color="primary"  @click="powerUpdate('thunder01' ,thunder1)">Apply</v-btn>
             </v-row>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -149,7 +148,7 @@
           <v-expansion-panel-header>
             THUNDER 02        
             <v-spacer/>
-            <v-col class="ma-0 pa-0" cols='1'> <v-chip :color="nodeStateStyle(nodeStates[0])">{{nodeStates[0]}}</v-chip></v-col>            
+            <v-col class="ma-0 pa-0" cols='1'> <v-chip dark :color="nodeStateStyle(nodePowers[1])">{{nodePowers[1]}}</v-chip></v-col>            
           </v-expansion-panel-header>
           <v-expansion-panel-content>
               <v-row>
@@ -159,36 +158,37 @@
                   md="6"
                 >
                   <v-radio-group
-                    v-model="nodePowers[1]"
+                    v-model="thunder2"
                     column
                   >
                     <v-radio
                       label="POWER ON"
-                      color="#E53935"
+                      color="#43A047"
                       value="on"
-                      @click="powerUpdate('thunder02' ,nodePowers[1])"
                     ></v-radio>
                     <v-radio
                       label="POWER OFF"
                       color="#E0E0E0"
                       value="off"
-                      @click="powerUpdate('thunder02' ,nodePowers[1])"
                     ></v-radio>
                     <v-radio
                       label="HARDWARE RESET"
                       color="#1E88E5"
                       value="reset"
-                      @click="powerUpdate('thunder02' ,nodePowers[1])"
                     ></v-radio>
                     <v-radio
                       label="SOFTWARE RESET(cycle)"
                       color="#FDD835"
                       value="cycle"
-                      @click="powerUpdate('thunder02' ,nodePowers[1])"
                     ></v-radio>
                   </v-radio-group>
                 </v-col>
             </v-row>
+            <v-row class="my-1">
+              <v-spacer/>
+              <v-btn tile color="primary"  @click="powerUpdate('thunder02' ,thunder2)">Apply</v-btn>
+            </v-row>
+
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
@@ -206,56 +206,46 @@ export default {
 
   data () {
     return {
-      disabled: false,
-      readonly: false,
-      nodeStates:[],
       nodePowers:[],
-      ex7: 'red',
+      csnow1:'',
+      csnow2:'',
+      thunder1:'',
+      thunder2:'',
     }
   },
 
 
-  created() {
-    this.getData()
+  async created() {
+    await this.power('node')
+    await this.dataSetting()
     this.polling = setInterval(this.getData, 2000);
   },
 
-
   methods:{
+    dataSetting(){
+      this.csnow1 = this.nodePowers[2] 
+      this.csnow2 = this.nodePowers[3] 
+      this.thunder1 = this.nodePowers[0] 
+      this.thunder2 = this.nodePowers[1] 
+    },
 
     getData(){
-      this.nodeState('state')
       this.power('node')
     },
 
     nodeStateStyle(state){
       let style = ""
       switch( state ) {
-          case 'IDLE':
+          case 'off':
             style ="#E0E0E0"
           break;
-          case 'ALLOC':
-            style ="#1E88E5"
+          case 'on':
+            style ="#43A047"
           break;
-          case 'DOWN':
-            style ="#E53935"
-          break;
-          default:
-            style ="#FDD835"
-          break;
+
       }
 
       return style
-    },
-
-    async nodeState(type){
-      try {
-        let result = await slurm.nodes(type)
-      
-        this.nodeStates = result
-      } catch (e) {
-        console.error(e)
-      }
     },
 
     async power(type){
@@ -263,6 +253,7 @@ export default {
           let result = await ipmi.power(type)
 
           this.nodePowers = result 
+
         } catch (e) {
           console.error(e)
         }

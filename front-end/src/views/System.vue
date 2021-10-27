@@ -56,7 +56,7 @@
                 :style="nodeStateStyle(nodeStates[0])" 
               >              
                 <v-card-text>
-                  <div class="title mt-3 font-weight-bold black--text">{{nodeStates[0]}}</div>
+                  <div class="subtitle-1 mt-3 font-weight-bold black--text">{{nodeStates[0]}}</div>
                   <div>01</div>
                 </v-card-text>
               </v-card>
@@ -68,7 +68,7 @@
                 :style="nodeStateStyle(nodeStates[1])" 
               >              
                 <v-card-text>
-                    <div class="title mt-3 font-weight-bold black--text">{{nodeStates[1]}}</div>
+                    <div class="subtitle-1 mt-3 font-weight-bold black--text">{{nodeStates[1]}}</div>
                     <div>02</div>
                 </v-card-text>
               </v-card>
@@ -85,7 +85,7 @@
                   :style="nodeStateStyle(nodeStates[2])" 
                 >              
                   <v-card-text>
-                    <div class="title mt-3 font-weight-bold black--text">{{nodeStates[2]}}</div>
+                    <div class="subtitle-1 mt-3 font-weight-bold black--text">{{nodeStates[2]}}</div>
                     <div>01</div>
                   </v-card-text>
                 </v-card>
@@ -97,7 +97,7 @@
                   :style="nodeStateStyle(nodeStates[3])" 
                 >              
                   <v-card-text>
-                    <div class="title mt-3 font-weight-bold black--text">{{nodeStates[3]}}</div>
+                    <div class="subtitle-1 mt-3 font-weight-bold black--text">{{nodeStates[3]}}</div>
                     <div>02</div>
                   </v-card-text>
                 </v-card>
@@ -115,7 +115,7 @@
           height="450"
         >
           <v-card-text>
-            <div class=" display-1 black--text font-weight-medium mt-5 ml-6">JOB RUNTIME</div>
+            <div class=" display-1 black--text font-weight-medium mt-5 ml-6">JOB RUNTIME (s)</div>
             <div class=" subtitle-2  font-weight-medium mt-2 ml-6">Top 18 of {{jobHistoryTotal}}</div>
             <BarChart
               class="px-2"
@@ -273,54 +273,51 @@ export default {
       try {
         let result = await slurm.jobHistory(type)
 
-        result.sort((prev , current ) => { return current.cpu - prev.cpu})
+        result.sort((prev , current ) => { return current.second - prev.second})
+
+        console.log("result :" ,result)
 
         let topResult = result.filter((order , index) => { return index < 18 })
         let barLabel = topResult.map(result => { return result.id})
-        let barData = topResult.map(result => { return result.cpu})
+        let barData = topResult.map(result => { return result.second})
         this.jobHistoryTotal = result.length
 
         let thunder= result.filter(result => { return result.partition === "thunder"})
         let csnow= result.filter(result => { return result.partition === "snow"})
         let all= result.filter(result => { return result.partition === "all"})
 
-        let thunderCpu= thunder.map(thunder => { return thunder.cpu})
-        let csnowCpu= csnow.map(csnow => { return csnow.cpu})
-        let allCpu= all.map(all => { return all.cpu})
-        let resultCpu = result.map(result => { return result.cpu})
-
-        thunderCpu = thunderCpu.reduce((prev , current) => { return prev + current}) 
-        csnowCpu = csnowCpu.reduce((prev , current) => { return prev + current}) 
-        allCpu = allCpu.reduce((prev , current) => { return prev + current}) 
-        resultCpu = resultCpu.reduce((prev , current) => { return prev + current}) 
-
         this.jobBarColl = {
           labels: barLabel,
           datasets: [
             {
-              label: 'CPU',
+              label: 'SECOND',
               backgroundColor: '#00897B',
               data: barData
             },
         ]}
 
         this.jobHorizontalColl = {
-          labels: ['CPU'],
+          labels: ['Volume'],
           datasets: [
             {
               label: 'CSNOW',
               backgroundColor: '#00897B',
-              data: [ csnowCpu]
+              data: [csnow.length]
             },
             {
               label: 'THUNDER',
               backgroundColor: '#039BE5',
-              data: [ thunderCpu]
+              data: [thunder.length]
             },
             {
               label: 'ALL',
               backgroundColor: '#00ACC1',
-              data: [ allCpu]
+              data: [all.length]
+            },
+            {
+              label: 'OTHER',
+              backgroundColor: '#E0E0E0',
+              data: [result.length - (all.length + thunder.length +csnow.length )]
             },
           ],
         }

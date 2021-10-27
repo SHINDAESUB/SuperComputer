@@ -6,7 +6,7 @@ const dgram = require('dgram');
 const client = dgram.createSocket('udp4');
 const clientPort= 9300;
 
-const clientHost ='192.168.5.101';
+const clientHost ='127.0.0.1';
 
 client.on('close', function() {
     console.log('Client UDP socket close')
@@ -25,6 +25,7 @@ router.get("/power" , (req ,res) => {
                 }
             }        
         break;
+
         case 'node':
             let str1 = ': '
             let states =[]

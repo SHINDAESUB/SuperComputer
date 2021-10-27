@@ -39,9 +39,9 @@
                 <div class="display-1 ">ADOLE</div>
               </v-card-text>
             </v-card>
-<v-divider
-  vertical
-></v-divider>
+            <v-divider
+              vertical
+            ></v-divider>
             <v-card
               class="mx-auto rounded-circle"
               height="250"
