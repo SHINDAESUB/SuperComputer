@@ -183,23 +183,21 @@ export default {
     }
   },
 
-  mounted(){
-    this.totalColl = {
-        labels: ['x','y'],
-        datasets: [
-            {
-                backgroundColor: ['#039BE5' ,'#00ACC1','#E0E0E0'],
-                data: [ 4 ,3 ,8],
-            }
-        ],
-    }
-    this.nodeState('state')
-    this.cpuHalfDoughnut('cpu')
-    this.freeHalfDoughnut('free')
-    this.jobHistory('system')
+  created() {
+    this.getData()
+    this.polling = setInterval(this.getData, 2000);
   },
 
+
   methods:{
+
+    getData(){
+      this.nodeState('state')
+      this.cpuHalfDoughnut('cpu')
+      this.freeHalfDoughnut('free')
+      this.jobHistory('system')
+    },
+
     nodeStateStyle(state){
       let style = ""
       switch( state ) {
@@ -330,8 +328,11 @@ export default {
         console.error(e)
       }
     },
-
+  },
+  beforeDestroy () {
+    clearInterval(this.polling)
   }
+
 }
 </script>
 <style lang="scss">
