@@ -48,7 +48,18 @@
           </v-list-item-icon>
           <v-list-item-title>Image Redirection</v-list-item-title>
         </v-list-item>
+        <v-divider/>
+        <v-list-item link :href="'http://www.naver.com'" target="_blank" >
+          <v-list-item-icon>
+            <v-icon>mdi-application-outline</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>
+            Ganglia
+          </v-list-item-title>
+        </v-list-item>
       </v-list>
+
+
     </v-navigation-drawer>
     <v-main class="grey lighten-2">
       <Header/>
