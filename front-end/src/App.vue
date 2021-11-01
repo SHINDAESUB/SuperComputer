@@ -49,7 +49,7 @@
           <v-list-item-title>Image Redirection</v-list-item-title>
         </v-list-item>
         <v-divider/>
-        <v-list-item link :href="'http://www.supreme-k.org/ganglia'" target="_blank" >
+        <v-list-item link :href="'http://www.supreme-k.org/30080/ganglia'" target="_blank" >
           <v-list-item-icon>
             <v-icon>mdi-application-outline</v-icon>
           </v-list-item-icon>
