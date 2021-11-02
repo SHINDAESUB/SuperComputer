@@ -30,31 +30,31 @@
           </v-list-item-icon>
           <v-list-item-title>Report</v-list-item-title>
         </v-list-item>
-        <v-list-item link to="/fru"> 
+        <v-list-item disabled link to="/fru" > 
           <v-list-item-icon>
-            <v-icon>mdi-file-chart-outline</v-icon>
+            <v-icon>mdi-information</v-icon>
           </v-list-item-icon>
           <v-list-item-title>FRU Information</v-list-item-title>
         </v-list-item>
-        <v-list-item link to="/remote">
+        <v-list-item disabled link to="/remote">
           <v-list-item-icon>
-            <v-icon>mdi-file-chart-outline</v-icon>
+            <v-icon>mdi-remote</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Remote Control</v-list-item-title>
         </v-list-item>
-        <v-list-item link to="/image">
+        <v-list-item disabled link to="/image">
           <v-list-item-icon>
-            <v-icon>mdi-file-chart-outline</v-icon>
+            <v-icon>mdi-image</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Image Redirection</v-list-item-title>
         </v-list-item>
         <v-divider/>
-        <v-list-item link :href="'http://www.supreme-k.org/30080/ganglia'" target="_blank" >
+        <v-list-item link :href="'http://www.supreme-k.org:30080/ganglia'" target="_blank" >
           <v-list-item-icon>
             <v-icon>mdi-application-outline</v-icon>
           </v-list-item-icon>
           <v-list-item-title>
-            Ganglia
+            <v-img src="../public/ganglia.jpeg" />
           </v-list-item-title>
         </v-list-item>
       </v-list>

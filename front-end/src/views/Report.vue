@@ -5,55 +5,17 @@
         <v-card
           class="elevation-2 rounded-xl"
           color="white"
-          height="800px"
+          max-height="940px"
         >
           <v-card-text class="pa-6">
-            <ScatterChart
-              :chart-data="totalColl"
-              height="400"
-              class="mx-12"
-            />
-            <v-row class="text-center mt-12">
-            <v-card
-              class="mx-auto rounded-circle"
-              height="250"
-              width="250"
-              outlined
-              style='border: 10px solid #00BFA5;' 
-            >              <v-card-text>
-                <div class="display-3 mt-12 font-weight-bold black--text">50</div>
-                <div class="display-1 ">CHORO</div>
-              </v-card-text></v-card>
-              <v-divider
-                vertical
-              ></v-divider>
-            <v-card
-              class="mx-auto rounded-circle"
-              height="250"
-              width="250"
-              outlined
-              style='border: 10px solid #00BFA5;' 
-            >
-              <v-card-text>
-                <div class="display-3 mt-12 font-weight-bold black--text">50</div>
-                <div class="display-1 ">ADOLE</div>
-              </v-card-text>
-            </v-card>
-            <v-divider
-              vertical
-            ></v-divider>
-            <v-card
-              class="mx-auto rounded-circle"
-              height="250"
-              width="250"
-              outlined
-              style='border: 10px solid #00BFA5;' 
-            >              <v-card-text>
-                <div class="display-3 mt-12 font-weight-bold black--text">50</div>
-                <div class="display-1 ">SCENS</div>
-              </v-card-text></v-card>
+            <v-row>
+              <v-col cols="4">
+              </v-col>
+              <v-col cols="4">
+              </v-col>
+              <v-col cols="4">
+              </v-col>
             </v-row>
-
           </v-card-text>
         </v-card>
       </v-col>
@@ -62,14 +24,11 @@
 </template>
 
 <script>
-import ScatterChart from '../components/ScatterChart.vue'
 
 export default {
   name: 'Report',
 
-  components: {
-    ScatterChart,
-  },
+
   data () {
     return {
       totalColl:{

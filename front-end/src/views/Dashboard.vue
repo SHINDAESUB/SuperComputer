@@ -66,11 +66,9 @@
           <LineChart
             :chart-data="lineChartData"
             :height="520"
-            :title="'Usage'"
+            :title="'Load'"
           />
         </v-card-text>
-
-
         </v-card>
       </v-col>
       <v-col cols="4">
