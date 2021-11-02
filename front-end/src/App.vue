@@ -51,10 +51,11 @@
         <v-divider/>
         <v-list-item link :href="'http://www.supreme-k.org:30080/ganglia'" target="_blank" >
           <v-list-item-icon>
-            <v-icon>mdi-application-outline</v-icon>
+            <v-img src="../public/ganglia.jpeg" max-height="24px" max-width="24px"/>
           </v-list-item-icon>
           <v-list-item-title>
-            <v-img src="../public/ganglia.jpeg" />
+            Ganglia
+            
           </v-list-item-title>
         </v-list-item>
       </v-list>
