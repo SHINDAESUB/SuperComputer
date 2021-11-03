@@ -198,7 +198,6 @@
 </template>
 
 <script>
-import slurm from '../services/slurm'
 import ipmi from '../services/ipmi'
 
 export default {

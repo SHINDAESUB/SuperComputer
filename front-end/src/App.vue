@@ -54,8 +54,7 @@
             <v-img src="../public/ganglia.jpeg" max-height="24px" max-width="24px"/>
           </v-list-item-icon>
           <v-list-item-title>
-            Ganglia
-            
+            Gangliam
           </v-list-item-title>
         </v-list-item>
       </v-list>
