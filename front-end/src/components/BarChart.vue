@@ -27,6 +27,10 @@ export default {
                 beginAtZero: true, // 0 부터 시작 
                 scaleShowLabels:true, 
               },
+              scaleLabel: {
+                  display: true,
+                  labelString: 'sec'
+              },
               gridLines: {
                 display: false
               }
@@ -35,6 +39,11 @@ export default {
               gridLines: {
                 display: false
               },
+              scaleLabel: {
+                  display: true,
+                  labelString: 'Job ID'
+              },
+
               ticks: {
                 scaleShowLabels:true,
                 suggestedMin: 1
@@ -42,7 +51,7 @@ export default {
             }]
           },
           legend: {
-            display: true, /* false = 범례를 숨긴다.  */
+            display: false, /* false = 범례를 숨긴다.  */
             position: 'bottom',
             // labels: {
             //     fontSize: 12,

@@ -27,7 +27,7 @@
         >
           <v-card-text class="pa-6">
             <HalfDoughnutChart
-              title='FREE MEMORY'
+              title='MEMORY USE'
               :chart-data="freeMemColl"
               height="280"
             />
@@ -46,7 +46,7 @@
         >
           <v-card-text class="pa-6">
             <div class=" display-1 black--text font-weight-medium mt-5 ml-6">NODE STATE </div>
-            <div class=" subtitle-2  font-weight-medium mt-2 ml-6">CSNOW </div>
+            <div class=" subtitle-2  font-weight-medium mt-2 ml-6">SNOW </div>
             <v-row class="text-center mt-2">
               <v-card
                 class="mx-auto rounded-circle"
@@ -115,12 +115,12 @@
           height="450"
         >
           <v-card-text>
-            <div class=" display-1 black--text font-weight-medium mt-5 ml-6">JOB RUNTIME (s)</div>
+            <div class=" display-1 black--text font-weight-medium mt-5 ml-6">JOB RUNTIME</div>
             <div class=" subtitle-2  font-weight-medium mt-2 ml-6">Top 18 of {{jobHistoryTotal}}</div>
             <BarChart
               class="px-2"
               :chart-data="jobBarColl"
-              height="300"
+              height="320"
             />
           </v-card-text>
 
@@ -297,7 +297,7 @@ export default {
         ]}
 
         this.jobHorizontalColl = {
-          labels: ['Volume'],
+          labels: [''],
           datasets: [
             {
               label: 'CSNOW',

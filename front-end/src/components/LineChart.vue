@@ -18,13 +18,17 @@ export default {
     return {
       options: {
           title: {
-            display: true,
+            display: false,
             text: this.title
           },
           scales: {
             yAxes: [{
               ticks: {
                 beginAtZero: true
+              },
+              scaleLabel: {
+                  display: true,
+                  labelString: 'Load / Process (sec)'
               },
               gridLines: {
                 display: true

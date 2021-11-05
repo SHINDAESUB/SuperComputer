@@ -62,13 +62,16 @@
           height=600
           @click="gangliaLine()"
         >
-        <v-card-text>
-          <LineChart
-            :chart-data="lineChartData"
-            :height="520"
-            :title="'Load'"
-          />
-        </v-card-text>
+          <v-card-text class="pa-6">
+              <v-row no-gutters class="display-1">Load last 30 sec</v-row>
+          </v-card-text>
+          <v-card-text>
+            <LineChart
+              :chart-data="lineChartData"
+              :height="450"
+              :title="'Load'"
+            />
+          </v-card-text>  
         </v-card>
       </v-col>
       <v-col cols="4">
@@ -78,15 +81,18 @@
           height="600"
           @click="gangliaDoughnut()"
         >
+          <v-card-text class="pa-6">
+              <v-row no-gutters class="display-1">CPU Usage</v-row>
+          </v-card-text>
           <DoughnutChart
             :chart-data="doughnutChartCsnow"
-            :height="280"
-            :title="'CSNOW'"
+            :height="240"
+            :title="'SNOW'"
           />
           <v-divider/>
           <DoughnutChart
             :chart-data="doughnutChartThunder"
-            :height="280"
+            :height="240"
             :title="'THUNDER'"
           />
         </v-card>
@@ -223,7 +229,14 @@ export default {
         this.csnow.push(result.csnow)
         this.thunder.push(result.thunder)
 
-        if(this.lineLabel.length < 10 ) this.lineLabel.push(this.thunder.length)
+        
+          let date = new Date()
+          let hour = date.getHours()
+          hour = hour >= 10 ? hour : '0' + hour
+          let min = date.getMinutes()
+          let sec = date.getSeconds()
+          if(this.lineLabel.length === 10 ) this.lineLabel.shift() 
+          this.lineLabel.push(hour+":"+min+":"+sec)
       
         this.lineChartData = {
           labels: this.lineLabel,
@@ -252,10 +265,10 @@ export default {
           let result = await ganglia.bar()
           
           this.doughnutChartCsnow = {
-            labels: ['CPU','USER','OTHER'],
+            labels: ['SYSTEM','USER','OTHER'],
             datasets: [
               {
-                label: 'CSNOW',
+                label: 'SNOW',
                 backgroundColor: [
                   '#7E57C2',
                   '#5C6BC0',
@@ -266,7 +279,7 @@ export default {
           ]}
 
           this.doughnutChartThunder = {
-            labels: ['CPU','USER','OTHER'],
+            labels: ['SYSTEM','USER','OTHER'],
             datasets: [
               {
                 label: 'THUNDER',

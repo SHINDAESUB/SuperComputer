@@ -26,6 +26,19 @@ export default {
             },
             responsive: true, 
             maintainAspectRatio: false, 
+            plugins: {
+              datalabels: {
+                color: 'white',
+                display: function(context) {
+                  return context.dataset.data[context.dataIndex] > 15;
+                },
+                font: {
+                  weight: 'bold'
+                },
+                formatter: Math.round
+              }
+            },
+
         },
     }
   },
