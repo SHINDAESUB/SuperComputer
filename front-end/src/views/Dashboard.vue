@@ -242,7 +242,7 @@ export default {
           labels: this.lineLabel,
           datasets: [
             {
-              label: 'CSNOW',
+              label: 'SNOW',
               borderColor:'#26C6DA',
               backgroundColor: '#FFFFFF00',
               data:this.csnow

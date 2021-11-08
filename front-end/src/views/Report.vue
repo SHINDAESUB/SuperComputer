@@ -16,54 +16,52 @@
               </v-btn>
             </v-row>
             <v-row>
-              <v-col cols="3">
-                  <v-list
-                    class="overflow-auto elevation-1" max-height="850"
+              <v-col cols="3" class="overflow-auto elevation-1" style="max-height:840px" >
+                  <v-list max-height="840px"
                   >
-                    <v-list-item-group
-                      v-model="selected"
-                      active-class="border"
-                      color="indigo"
-                    >
-                      <template v-for="(item, index) in list">
-                        <v-list-item :key="item" @click="fileSelect(list[index])">
-                          <v-list-item-content>
-                            <v-list-item-title v-text="list[index]"></v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-divider
-                          v-if="index < list.length - 1"
-                          :key="index"
-                        ></v-divider>
-                      </template>
-                    </v-list-item-group>
+                      <span v-for="(item , index) in list" :key="index">
+                          <v-list-item  v-if="!item.hasOwnProperty('files')" >
+                              <v-list-item-content @click="fileSelect(list[index].name , null)">
+                                  <v-list-item-title >{{ item.name }}</v-list-item-title>
+                              </v-list-item-content>
+                          </v-list-item>
+
+                          <v-list-group v-else no-actions >
+                              <template v-slot:activator>
+                                  <v-list-item-content>
+                                      <v-list-item-title>{{ item.name }}</v-list-item-title>
+                                  </v-list-item-content>
+                              </template>
+
+                              <v-list-item
+                                  v-for="files in item.files"
+                                  :key="files"
+                              >
+                                  <v-list-item-content @click="fileSelect(files ,item.name )">
+                                      <v-list-item-title >{{ files }}</v-list-item-title>
+                                  </v-list-item-content>
+                              </v-list-item>
+                          </v-list-group>
+                      </span>
                   </v-list>
               </v-col>
-              <v-col cols="9">
-                <v-row no-gutters>
-                  <v-card v-if="extension !== ''" class="overflow-auto" height="500px" max-height="500px" width="100%">
-                    <v-card-text>
-                      <div v-for="(text, index) in fileInfo.split('\n')" :key="index" :class="textColor(text)">
-                        {{ text }}
-                      </div>
-                    </v-card-text>
-                  </v-card>
-                </v-row>
-                <v-row no-gutters class="mt-5">
-                    <v-card v-if="extension !== ''" class="overflow-auto"  max-height='330px' height='330px' width="100%">
+              <v-col cols="9" class="mt-0 pt-0" >
+                <div class="title">{{selected}}</div>
+                <v-row no-gutters class="mt-2">
+                    <v-card v-if="extension !== ''"  max-height='380px' height='380px' width="100%">
                       <v-card-text v-if="extension === '.out'">
-                        <v-row>
-                          <v-col
+                        <v-slide-group
+                          active-class="success"
+                          show-arrows
+                        >
+                          <v-slide-item
                             v-for="(item ,index) in outputResult"
                             :key="index"
-                            cols="12"
-                            sm="6"
-                            md="4"
-                            lg="3"
+                            class="ma-1 pa-0"
                           >
-                            <v-card class="elevation-1">
+                            <v-card class="elevation-1" width="300px">
                               <v-card-subtitle class="subheading font-weight-bold">
-                              RESEULT {{ index + 1}}
+                                RESEULT {{ index + 1}}
                               </v-card-subtitle>
                               <v-divider></v-divider>
                               <v-list dense>
@@ -82,8 +80,8 @@
                                 </v-list-item>
                               </v-list>
                             </v-card>
-                          </v-col>
-                        </v-row>
+                          </v-slide-item>
+                        </v-slide-group>
                       </v-card-text>
                       <v-card-text v-else-if="extension === '.txt'">
                         <v-row>
@@ -233,6 +231,16 @@
                       </v-card-text>
                     </v-card>
                 </v-row>
+                <v-row no-gutters>
+                  <v-card v-if="extension !== ''" class="overflow-auto mt-5" height="400px" max-height="400px" width="100%">
+                    <v-card-text>
+                      <div v-for="(text, index) in fileInfo.split('\n')" :key="index" :class="textColor(text)">
+                        {{ text }}
+                      </div>
+                    </v-card-text>
+                  </v-card>
+                </v-row>
+
               </v-col>
             </v-row>
           </v-card-text>
@@ -282,6 +290,8 @@ export default {
         try {
           let result = await out.list()
 
+          console.log('result',result)
+
           this.extension = ''
           this.fileInfo = ''
           this.selected = null
@@ -292,15 +302,22 @@ export default {
         }
     },
 
-    async fileSelect(file){
+    async fileSelect(file ,folder){
+
         this.outputResult = []
+
+        let root = folder !== null ? folder+"/"+file : file
+
         try {
-          let result = await out.read(file)
+          let result = await out.read(root)
+
+          this.selected = file
+
           this.fileInfo = result 
 
-          let fileLen = this.list[this.selected].length;
-          let dotLen = this.list[this.selected].lastIndexOf('.');
-          this.extension  = this.list[this.selected].substring(dotLen, fileLen)
+          let fileLen = file.length;
+          let dotLen = file.lastIndexOf('.');
+          this.extension = file.substring(dotLen, fileLen)
           this.extension === '.out' ?  this.outputSetting() : this.snowSetting()
         
         } catch (e) {

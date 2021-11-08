@@ -235,10 +235,10 @@ export default {
         this.cpuPersent =Math.round((this.cpuUse / this.cpuTotal) * 100)  
 
         this.cpuColl = {
-          labels: ['Thunder','CSNOW','OTHER'],
+          labels: ['Thunder','SNOW','OTHER'],
           datasets: [
             {
-              label: ['Thunder','CSNOW','OTHER'],
+              label: ['Thunder','SNOW','OTHER'],
               backgroundColor: ['#039BE5' ,'#00ACC1','#E0E0E0'],
               data:[ result.thunder , result.csnow ,this.cpuTotal - this.cpuUse ]
             },
@@ -300,7 +300,7 @@ export default {
           labels: [''],
           datasets: [
             {
-              label: 'CSNOW',
+              label: 'SNOW',
               backgroundColor: '#00897B',
               data: [csnow.length]
             },

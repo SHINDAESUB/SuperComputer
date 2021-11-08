@@ -5,7 +5,7 @@
       <v-expansion-panels>
         <v-expansion-panel >
           <v-expansion-panel-header >
-            CSNOW 01     
+            SNOW 01     
             <v-spacer/>
             <v-col class="ma-0 pa-0" cols='1'> <v-chip dark :color="nodeStateStyle(nodePowers[2])">{{nodePowers[2]}}</v-chip></v-col>
           </v-expansion-panel-header>
@@ -52,7 +52,7 @@
 
         <v-expansion-panel>
           <v-expansion-panel-header>
-            CSNOW 02 
+            SNOW 02 
             <v-spacer/>
             <v-col class="ma-0 pa-0" cols='1'> <v-chip dark :color="nodeStateStyle(nodePowers[3])">{{nodePowers[3]}}</v-chip></v-col>
           </v-expansion-panel-header>
