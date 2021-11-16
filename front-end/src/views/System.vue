@@ -33,7 +33,7 @@
             />
             <v-divider class="mt-2"></v-divider>
             <div class="text-center display-1 black--text font-weight-medium mt-5">{{freeMemPersent}} %</div>
-            <div class="text-center title  font-weight-medium mt-2">{{freeMemUse}} of {{freeMemTotal}} GB</div>
+            <div class="text-center title  font-weight-medium mt-2">{{freeMemTotal - freeMemUse}} of {{freeMemTotal}} GB</div>
           </v-card-text>
         </v-card>
       </v-col>
@@ -253,15 +253,15 @@ export default {
         let result = await slurm.nodes(type)
 
         this.freeMemUse = result.use
-        this.freeMemPersent = Math.round((result.use / this.freeMemTotal) * 100)
+        this.freeMemPersent = Math.round(((this.freeMemTotal - result.use) / this.freeMemTotal) * 100)
 
         this.freeMemColl = {
-          labels: ['USE','FREE'],
+          labels: [ 'FREE' ,'USE'],
           datasets: [
             {
-              label: ['USE','FREE'],
+              label: ['FREE','USE'],
               backgroundColor: ['#039BE5','#E0E0E0'],
-              data:[ this.freeMemUse , this.freeMemTotal - this.freeMemUse  ]
+              data:[this.freeMemUse ,  this.freeMemTotal - this.freeMemUse ]
             },
         ]}
       } catch (e) {
