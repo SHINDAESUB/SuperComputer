@@ -256,12 +256,12 @@ export default {
         this.freeMemPersent = Math.round(((this.freeMemTotal - result.use) / this.freeMemTotal) * 100)
 
         this.freeMemColl = {
-          labels: [ 'FREE' ,'USE'],
+          labels: ['USE', 'FREE' ],
           datasets: [
             {
-              label: ['FREE','USE'],
-              backgroundColor: ['#039BE5','#E0E0E0'],
-              data:[this.freeMemUse ,  this.freeMemTotal - this.freeMemUse ]
+              label: ['USE' ,'FREE'],
+              backgroundColor: ['#039BE5', '#E0E0E0',],
+              data:[ this.freeMemTotal - this.freeMemUse ,this.freeMemUse    ]
             },
         ]}
       } catch (e) {
