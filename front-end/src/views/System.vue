@@ -148,10 +148,10 @@
 
 <script>
 import slurm from '../services/slurm'
-import LineChart from '../components/LineChart.vue'
-import HalfDoughnutChart from '../components/HalfDoughnutChart.vue'
-import HorizontalBar from '../components/HorizontalBar.vue'
-import BarChart from '../components/BarChart.vue'
+import LineChart from '../components/charts/LineChart.vue'
+import HalfDoughnutChart from '../components/charts/HalfDoughnutChart.vue'
+import HorizontalBar from '../components/charts/HorizontalBar.vue'
+import BarChart from '../components/charts/BarChart.vue'
 
 export default {
   name: 'Home',

@@ -1,5 +1,10 @@
 <template>
-  <v-container class="dashboard d-flex flex-column justify-center   "  >
+  <section>
+    <Slurm/>
+    <Ganglia/>
+  </section>
+
+  <!-- <v-container class=" d-flex flex-column justify-center   "  >
     <v-row >
       <v-col cols="4">
         <v-card
@@ -137,17 +142,19 @@
           </v-card-text></v-card>
       </v-col>
     </v-row>
-  </v-container>
+  </v-container> -->
 </template>
 
 <script>
 import ganglia from '../services/ganglia'
 import ipmi from '../services/ipmi'
 import slurm from '../services/slurm'
-import Header from '../components/Header.vue'
-import LineChart from '../components/LineChart.vue'
-import DoughnutChart from '../components/DoughnutChart.vue'
+import Header from '../components/commons/Header.vue'
+import LineChart from '../components/charts/LineChart.vue'
+import DoughnutChart from '../components/charts/DoughnutChart.vue'
 
+import Ganglia from '../components/dashboard/Ganglia.vue'
+import Slurm from '../components/dashboard/Slurm.vue' 
 
 export default {
   name: 'Home',
@@ -155,7 +162,8 @@ export default {
   components: {
     LineChart,
     DoughnutChart,
-    Header,
+    Slurm,
+    Ganglia
   },
 
   data () {
@@ -179,8 +187,8 @@ export default {
     }
   },
   created() {
-    this.getData()
-    this.polling = setInterval(this.getData, 2000);
+    // this.getData()
+    // this.polling = setInterval(this.getData, 2000);
   },
 
   methods:{
@@ -310,12 +318,10 @@ export default {
   },
 
   beforeDestroy () {
-    clearInterval(this.polling)
+    // clearInterval(this.polling)
   }
 }
 </script>
 <style lang="scss">
-.dashboard{
-  height: 100vh;
-}
+
 </style>

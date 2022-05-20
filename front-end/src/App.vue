@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       app
       permanent
       expand-on-hover
@@ -60,7 +60,7 @@
       </v-list>
 
 
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-main class="grey lighten-2">
       <Header/>
       <router-view/>
@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import Header from './components/Header.vue';
+import Header from './components/commons/Header.vue';
 
 export default {
   components: { Header },
