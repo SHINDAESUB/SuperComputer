@@ -1,0 +1,281 @@
+#####
+thunder01
+CPU0_TEMP        | 62.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 85.000    | 88.000    | na        
+CPU1_TEMP        | 60.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 85.000    | 88.000    | na        
+DIMM_P0_A0       | 37.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_A1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_B0       | 41.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_B1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_C0       | 37.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_C1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_D0       | 41.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_D1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_E0       | 38.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_E1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_F0       | 36.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_F1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_G0       | 37.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_G1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_H0       | 36.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_H1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+HDD_TEMP_1       | 30.000     | degrees C  | ok    | na        | na        | na        | 55.000    | 60.000    | na        
+HDD_TEMP_2       | 34.000     | degrees C  | ok    | na        | na        | na        | 55.000    | 60.000    | na        
+FP_TEMP          | 29.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 96.000    | 99.000    | na        
+VR_P0_TEMP       | 62.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 102.000   | 107.000   | na        
+VR_D_AC_TEMP     | 51.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+VR_D_BD_TEMP     | 56.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+VR_P1_TEMP       | 55.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 102.000   | 107.000   | na        
+VR_D_EG_TEMP     | 48.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+VR_D_FH_TEMP     | 49.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+P12V             | 11.890     | Volts      | ok    | na        | 10.324    | 10.788    | 13.224    | 13.688    | na        
+P5V              | 5.085      | Volts      | ok    | na        | 4.290     | 4.507     | 5.495     | 5.688     | na        
+P3V3             | 3.128      | Volts      | ok    | na        | 2.828     | 2.970     | 3.618     | 3.760     | na        
+P5V_STBY         | 5.037      | Volts      | ok    | na        | 4.290     | 4.507     | 5.495     | 5.688     | na        
+P_2V5_VDD        | 2.517      | Volts      | ok    | na        | 2.154     | 2.251     | 2.747     | 2.856     | na        
+P_VBAT           | 2.987      | Volts      | ok    | na        | 2.581     | 2.697     | na        | na        | na        
+P_VDD_CORE_P0    | 1.000      | Volts      | ok    | na        | 0.421     | 0.451     | 1.431     | 1.509     | na        
+P_VDD_CORE_P1    | 0.990      | Volts      | ok    | na        | 0.421     | 0.451     | 1.431     | 1.509     | na        
+P_VDDQ_AC        | 1.225      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_VDDQ_BD        | 1.225      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_VDDQ_EG        | 1.225      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_VDDQ_FH        | 1.225      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_1V5_VDD_OCT_P0 | 1.499      | Volts      | ok    | na        | 1.284     | 1.352     | 1.646     | 1.705     | na        
+P_1V5_VDD_OCT_P1 | 1.499      | Volts      | ok    | na        | 1.284     | 1.352     | 1.646     | 1.705     | na        
+P_1V8_PHY        | 1.793      | Volts      | ok    | na        | 1.548     | 1.627     | 1.980     | 2.048     | na        
+P_0V9_PHY        | 0.902      | Volts      | ok    | na        | 0.774     | 0.813     | 0.990     | 1.029     | na        
+VR_P0_VIN        | 11.625     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_P0_VOUT       | 0.976      | Volts      | ok    | na        | 0.784     | 0.832     | 1.056     | 1.104     | na        
+VR_D_AC_P12V     | 11.750     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_AC_P3V3     | 3.296      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_AC_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_D_BD_P12V     | 11.875     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_BD_P3V3     | 3.296      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_BD_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_P1_VIN        | 11.750     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_P1_VOUT       | 0.976      | Volts      | ok    | na        | 0.784     | 0.832     | 1.056     | 1.104     | na        
+VR_D_EG_P12V     | 11.750     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_EG_P3V3     | 3.296      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_EG_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_D_FH_P12V     | 11.875     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_FH_P3V3     | 3.296      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_FH_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_P0_IOUT       | 62.000     | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_AC_IOUT     | 2.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_BD_IOUT     | 2.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_P1_IOUT       | 63.000     | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_EG_IOUT     | 2.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_FH_IOUT     | 2.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+BPB_FAN05        | 10100.000  | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN06        | 8000.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN07        | 10200.000  | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN08        | 8000.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN09        | 11000.000  | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN10        | 7900.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN11        | 10100.000  | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN12        | 8000.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN13        | 10100.000  | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN14        | 8100.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+CPU0             | 0x0        | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+CPU1             | 0x0        | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+PSU1             | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU2             | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+MB_TEMP1         | 54.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 75.000    | 80.000    | na        
+MB_TEMP2         | 46.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 75.000    | 80.000    | na        
+MB_TEMP3         | 43.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 75.000    | 80.000    | na        
+SEL              | 0x0        | discrete   | 0x1080| na        | na        | na        | na        | na        | na        
+#####
+thunder02
+CPU0_TEMP        | 61.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 85.000    | 88.000    | na        
+CPU1_TEMP        | 58.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 85.000    | 88.000    | na        
+DIMM_P0_A0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_A1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_B0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_B1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_C0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_C1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_D0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P0_D1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_E0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_E1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_F0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_F1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_G0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_G1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_H0       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+DIMM_P1_H1       | na         | degrees C  | na    | na        | 0.000     | 5.000     | 82.000    | 85.000    | na        
+HDD_TEMP_1       | 30.000     | degrees C  | ok    | na        | na        | na        | 55.000    | 60.000    | na        
+HDD_TEMP_2       | 31.000     | degrees C  | ok    | na        | na        | na        | 55.000    | 60.000    | na        
+FP_TEMP          | 29.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 96.000    | 99.000    | na        
+VR_P0_TEMP       | 62.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 102.000   | 107.000   | na        
+VR_D_AC_TEMP     | 53.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+VR_D_BD_TEMP     | 52.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+VR_P1_TEMP       | 54.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 102.000   | 107.000   | na        
+VR_D_EG_TEMP     | 48.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+VR_D_FH_TEMP     | 50.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 100.000   | 105.000   | na        
+P12V             | 11.890     | Volts      | ok    | na        | 10.324    | 10.788    | 13.224    | 13.688    | na        
+P5V              | 5.133      | Volts      | ok    | na        | 4.290     | 4.507     | 5.495     | 5.688     | na        
+P3V3             | 3.334      | Volts      | ok    | na        | 2.828     | 2.970     | 3.618     | 3.760     | na        
+P5V_STBY         | 5.085      | Volts      | ok    | na        | 4.290     | 4.507     | 5.495     | 5.688     | na        
+P_2V5_VDD        | 2.493      | Volts      | ok    | na        | 2.154     | 2.251     | 2.747     | 2.856     | na        
+P_VBAT           | 2.813      | Volts      | ok    | na        | 2.581     | 2.697     | na        | na        | na        
+P_VDD_CORE_P0    | 0.990      | Volts      | ok    | na        | 0.421     | 0.451     | 1.431     | 1.509     | na        
+P_VDD_CORE_P1    | 0.990      | Volts      | ok    | na        | 0.421     | 0.451     | 1.431     | 1.509     | na        
+P_VDDQ_AC        | 1.225      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_VDDQ_BD        | 1.215      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_VDDQ_EG        | 1.225      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_VDDQ_FH        | 1.225      | Volts      | ok    | na        | 1.029     | 1.078     | 1.323     | 1.372     | na        
+P_1V5_VDD_OCT_P0 | 1.509      | Volts      | ok    | na        | 1.284     | 1.352     | 1.646     | 1.705     | na        
+P_1V5_VDD_OCT_P1 | 1.499      | Volts      | ok    | na        | 1.284     | 1.352     | 1.646     | 1.705     | na        
+P_1V8_PHY        | 1.793      | Volts      | ok    | na        | 1.548     | 1.627     | 1.980     | 2.048     | na        
+P_0V9_PHY        | 0.902      | Volts      | ok    | na        | 0.774     | 0.813     | 0.990     | 1.029     | na        
+VR_P0_VIN        | 11.875     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_P0_VOUT       | 0.976      | Volts      | ok    | na        | 0.784     | 0.832     | 1.056     | 1.104     | na        
+VR_D_AC_P12V     | 11.875     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_AC_P3V3     | 3.315      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_AC_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_D_BD_P12V     | 12.000     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_BD_P3V3     | 3.335      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_BD_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_P1_VIN        | 11.750     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_P1_VOUT       | 0.976      | Volts      | ok    | na        | 0.784     | 0.832     | 1.056     | 1.104     | na        
+VR_D_EG_P12V     | 12.000     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_EG_P3V3     | 3.335      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_EG_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_D_FH_P12V     | 11.875     | Volts      | ok    | na        | 10.375    | 10.750    | 13.250    | 13.625    | na        
+VR_D_FH_P3V3     | 3.335      | Volts      | ok    | na        | 2.828     | 2.964     | 3.627     | 3.764     | na        
+VR_D_FH_VOUT     | 1.217      | Volts      | ok    | na        | 1.030     | 1.076     | 1.326     | 1.373     | na        
+VR_P0_IOUT       | 57.000     | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_AC_IOUT     | 0.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_BD_IOUT     | 0.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_P1_IOUT       | 63.000     | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_EG_IOUT     | 0.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+VR_D_FH_IOUT     | 0.000      | Amps       | ok    | na        | na        | na        | 228.000   | 248.000   | na        
+BPB_FAN05        | 9500.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN06        | 7700.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN07        | 9500.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN08        | 7600.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN09        | 10000.000  | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN10        | 7700.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN11        | 9500.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN12        | 7700.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN13        | 9700.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+BPB_FAN14        | 7800.000   | RPM        | ok    | na        | 800.000   | 1000.000  | na        | na        | na        
+CPU0             | 0x0        | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+CPU1             | 0x0        | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+PSU1             | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU2             | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+MB_TEMP1         | 53.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 75.000    | 80.000    | na        
+MB_TEMP2         | 46.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 75.000    | 80.000    | na        
+MB_TEMP3         | 44.000     | degrees C  | ok    | na        | 0.000     | 5.000     | 75.000    | 80.000    | na        
+SEL              | 0x0        | discrete   | 0x2080| na        | na        | na        | na        | na        | na        
+#####
+snow01
+Watchdog         | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+SEL              | 0x0        | discrete   | 0x1080| na        | na        | na        | na        | na        | na        
+PSU1_PWR_OUT     | 52.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU1_PWR_IN      | 60.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU2_PWR_OUT     | 32.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU2_PWR_IN      | 44.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CORE_PWR         | 188.000    | Watts      | ok    | na        | na        | na        | 212.000   | 240.000   | 256.000   
+SOC_VOL          | 0.744      | Volts      | ok    | na        | 0.704     | 0.712     | 0.792     | 0.800     | na        
+CORE_VOL         | 0.824      | Volts      | ok    | 0.712     | 0.688     | 0.680     | 1.120     | 1.160     | 1.184     
+CPUDIMMG0_VOL    | 1.200      | Volts      | ok    | na        | 1.136     | 1.168     | 1.232     | 1.264     | na        
+CPUDIMMG1_VOL    | 1.200      | Volts      | ok    | na        | 1.136     | 1.168     | 1.232     | 1.264     | na        
+SOC_PWR          | 24.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CPUDIMMG0_PWR    | 8.000      | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CPUDIMMG1_PWR    | 5.000      | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CPU0_Status      | 0x0        | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+SOC_TEMP         | 36.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 88.000    | 93.000    | 127.000   
+CORE_VRD_TEMP    | 38.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 88.000    | 93.000    | 127.000   
+CPU_DIMMG0_TEMP  | 36.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 84.000    | 87.000    | 127.000   
+CPU_DIMMG1_TEMP  | 36.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 84.000    | 87.000    | 127.000   
+M2_G0_AMB_TEMP   | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 0.000     | 100.000   | 105.000   | 127.000   
+FRONT_PANEL_TEMP | 30.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+MB_CPU_OUT_TEMP  | 32.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+MB_CPU_IN_TEMP   | 34.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+MB_ETH_TEMP      | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+SYS_FAN3         | 4200.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+SYS_FAN4         | 4200.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+SYS_FAN1         | 4200.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+SYS_FAN2         | 4200.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+PS1_Status       | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PS2_Status       | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU1_HOTSPOT     | 46.000     | degrees C  | ok    | -128.000  | 0.000     | 0.000     | 67.000    | 70.000    | 127.000   
+PSU2_HOTSPOT     | 45.000     | degrees C  | ok    | -128.000  | 0.000     | 0.000     | 67.000    | 70.000    | 127.000   
+P_0V6_0123       | 0.595      | Volts      | ok    | na        | 0.511     | 0.539     | 0.665     | 0.693     | na        
+P_0V6_4567       | 0.595      | Volts      | ok    | na        | 0.511     | 0.539     | 0.665     | 0.693     | na        
+P_0V85_VDDC      | 0.903      | Volts      | ok    | 0.630     | na        | na        | na        | 1.078     | na        
+P_12V            | 12.155     | Volts      | ok    | na        | 10.270    | 10.790    | 13.130    | 13.650    | na        
+P_1V5_VDDH       | 1.558      | Volts      | ok    | na        | 1.176     | 1.308     | 1.852     | 1.896     | na        
+P_1V8_PCP        | 1.843      | Volts      | ok    | na        | 1.426     | 1.541     | 2.059     | 2.174     | na        
+P_1V8_VDDH       | 1.843      | Volts      | ok    | na        | 1.426     | 1.541     | 2.059     | 2.174     | na        
+P_3V3            | 3.304      | Volts      | ok    | na        | 2.820     | 2.958     | 3.616     | 3.754     | na        
+P_3V3_SOC        | 3.276      | Volts      | ok    | na        | 2.730     | 2.898     | 3.696     | 3.864     | na        
+P_5V             | 4.986      | Volts      | ok    | na        | 4.292     | 4.498     | 5.474     | 5.680     | na        
+P_5V_STBY        | 5.011      | Volts      | ok    | na        | 4.292     | 4.498     | 5.474     | 5.680     | na        
+P_VBAT           | 2.989      | Volts      | ok    | na        | 2.544     | 2.692     | na        | na        | na        
+SOC_VDDCR        | 0.777      | Volts      | ok    | na        | 0.399     | 0.448     | 1.400     | 1.456     | na        
+P_VDDCR_CPU      | 0.833      | Volts      | ok    | na        | 0.399     | 0.448     | 1.400     | 1.456     | na        
+P_1V2_VDDIO_0123 | 1.197      | Volts      | ok    | na        | 1.022     | 1.071     | 1.323     | 1.358     | na        
+P_1V2_VDDIO_4567 | 1.197      | Volts      | ok    | na        | 1.022     | 1.071     | 1.323     | 1.358     | na        
+SYS_POWER        | 100.000    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+MB_DIMMG0_O_TEMP | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+MB_DIMMG1_O_TEMP | 32.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+MB_DIMMG1_I_TEMP | 32.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+MB_DIMMG0_I_TEMP | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+#####
+snow02
+Watchdog         | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+SEL              | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+PSU1_PWR_OUT     | 44.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU1_PWR_IN      | 44.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU2_PWR_OUT     | 32.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+PSU2_PWR_IN      | 44.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CORE_PWR         | 102.000    | Watts      | ok    | na        | na        | na        | 212.000   | 240.000   | 256.000   
+SOC_VOL          | 0.776      | Volts      | ok    | na        | 0.704     | 0.712     | 0.792     | 0.800     | na        
+CORE_VOL         | 0.824      | Volts      | ok    | 0.712     | 0.688     | 0.680     | 1.120     | 1.160     | 1.184     
+CPUDIMMG0_VOL    | 1.200      | Volts      | ok    | na        | 1.136     | 1.168     | 1.232     | 1.264     | na        
+CPUDIMMG1_VOL    | 1.200      | Volts      | ok    | na        | 1.136     | 1.168     | 1.232     | 1.264     | na        
+SOC_PWR          | 25.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CPUDIMMG0_PWR    | 9.000      | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CPUDIMMG1_PWR    | 5.000      | Watts      | ok    | na        | na        | na        | na        | na        | na        
+CPU0_Status      | 0x0        | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+SOC_TEMP         | 38.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 88.000    | 93.000    | 127.000   
+CORE_VRD_TEMP    | 38.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 88.000    | 93.000    | 127.000   
+CPU_DIMMG0_TEMP  | 37.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 84.000    | 87.000    | 127.000   
+CPU_DIMMG1_TEMP  | 36.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 84.000    | 87.000    | 127.000   
+M2_G0_AMB_TEMP   | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 0.000     | 100.000   | 105.000   | 127.000   
+FRONT_PANEL_TEMP | 30.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+MB_CPU_OUT_TEMP  | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+MB_CPU_IN_TEMP   | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+MB_ETH_TEMP      | 34.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 85.000    | 90.000    | 127.000   
+SYS_FAN3         | 4200.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+SYS_FAN4         | 4200.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+SYS_FAN1         | 4200.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+SYS_FAN2         | 4350.000   | RPM        | ok    | 0.000     | 150.000   | 300.000   | 38250.000 | 38250.000 | 38250.000 
+PS1_Status       | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PS2_Status       | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+PSU1_HOTSPOT     | 45.000     | degrees C  | ok    | -128.000  | 0.000     | 0.000     | 67.000    | 70.000    | 127.000   
+PSU2_HOTSPOT     | 43.000     | degrees C  | ok    | -128.000  | 0.000     | 0.000     | 67.000    | 70.000    | 127.000   
+P_0V6_0123       | 0.588      | Volts      | ok    | na        | 0.511     | 0.539     | 0.665     | 0.693     | na        
+P_0V6_4567       | 0.588      | Volts      | ok    | na        | 0.511     | 0.539     | 0.665     | 0.693     | na        
+P_0V85_VDDC      | 0.896      | Volts      | ok    | 0.630     | na        | na        | na        | 1.078     | na        
+P_12V            | 12.155     | Volts      | ok    | na        | 10.270    | 10.790    | 13.130    | 13.650    | na        
+P_1V5_VDDH       | 1.558      | Volts      | ok    | na        | 1.176     | 1.308     | 1.852     | 1.896     | na        
+P_1V8_PCP        | 1.829      | Volts      | ok    | na        | 1.426     | 1.541     | 2.059     | 2.174     | na        
+P_1V8_VDDH       | 1.829      | Volts      | ok    | na        | 1.426     | 1.541     | 2.059     | 2.174     | na        
+P_3V3            | 3.270      | Volts      | ok    | na        | 2.820     | 2.958     | 3.616     | 3.754     | na        
+P_3V3_SOC        | 3.276      | Volts      | ok    | na        | 2.730     | 2.898     | 3.696     | 3.864     | na        
+P_5V             | 5.011      | Volts      | ok    | na        | 4.292     | 4.498     | 5.474     | 5.680     | na        
+P_5V_STBY        | 4.986      | Volts      | ok    | na        | 4.292     | 4.498     | 5.474     | 5.680     | na        
+P_VBAT           | 2.968      | Volts      | ok    | na        | 2.544     | 2.692     | na        | na        | na        
+SOC_VDDCR        | 0.805      | Volts      | ok    | na        | 0.399     | 0.448     | 1.400     | 1.456     | na        
+P_VDDCR_CPU      | 0.819      | Volts      | ok    | na        | 0.399     | 0.448     | 1.400     | 1.456     | na        
+P_1V2_VDDIO_0123 | 1.190      | Volts      | ok    | na        | 1.022     | 1.071     | 1.323     | 1.358     | na        
+P_1V2_VDDIO_4567 | 1.190      | Volts      | ok    | na        | 1.022     | 1.071     | 1.323     | 1.358     | na        
+SYS_POWER        | 75.000     | Watts      | ok    | na        | na        | na        | na        | na        | na        
+MB_DIMMG0_O_TEMP | 32.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+MB_DIMMG1_O_TEMP | 32.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+MB_DIMMG1_I_TEMP | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+MB_DIMMG0_I_TEMP | 33.000     | degrees C  | ok    | -128.000  | 0.000     | 5.000     | 115.000   | 120.000   | 127.000   
+#####

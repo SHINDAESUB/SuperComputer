@@ -10,7 +10,7 @@
                     <v-card-title class="text-h5">Runtime</v-card-title>         
                     <v-card-text class="d-flex justify-end black--text">
                         <div>
-                            <span class="text-h3 mr-2 ">56</span>
+                            <span class="text-h3 mr-2 ">{{runtime}}</span>
                             <sub class="text-h6 font-weight-light">min</sub>
                         </div>
                     </v-card-text>
@@ -24,7 +24,7 @@
                     <v-card-title class="text-h5">Running Jobs</v-card-title>           
                     <v-card-text class="d-flex justify-end black--text">
                         <div>
-                            <span class="text-h3 mr-2 ">56</span>
+                            <span class="text-h3 mr-2 ">{{jobs}}</span>
                             <sub class="text-h6 font-weight-light">job</sub>
                         </div>
                     </v-card-text>
@@ -36,13 +36,13 @@
             >
                 <v-card>
                     <v-card-title class=" d-flex justify-space-between">
-                        <span class="text-h5">Node state</span>
+                        <span class="text-h5">Node State</span>
                         <span class="subtitle-2">
                             <v-chip
                                 label
                             >
                                 IDLE :
-                                4
+                                {{idle}}
                             </v-chip>
                             <v-chip
                                 class="mx-2"
@@ -50,14 +50,14 @@
                                 label
                             >
                                 USE :
-                                4
+                                {{use}}
                             </v-chip>
                             <v-chip
                                 color="primary"
                                 label
                             >
                                 TOTAL :
-                                4
+                                {{total}}
                             </v-chip>
                         </span>
                         </v-card-title>        
@@ -75,7 +75,7 @@
                                 />
                             </v-col>
                             <v-col cols="3" class="text-right">
-                                <span class="text-h3  mr-2">20</span>
+                                <span class="text-h3  mr-2">{{persent}}</span>
                                 <sub class="text-h6 font-weight-light">%</sub>
                             </v-col>
 
@@ -89,9 +89,15 @@
 
 <script>
 
-
 export default {
-
+    props:{
+        runtime:Number,
+        jobs:Number,
+        idle:Number,
+        total:Number,
+        use:Number,
+        persent:Number,
+    },  
 }
 </script>
 

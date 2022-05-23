@@ -1,0 +1,89 @@
+NodeName=mastercl Arch=x86_64 CoresPerSocket=1
+   CPUAlloc=0 CPUErr=0 CPUTot=96 CPULoad=0.53
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=192.168.5.101 NodeHostName=mastercl Version=17.11
+   OS=Linux 4.15.0-166-generic #174-Ubuntu SMP Wed Dec 8 19:07:44 UTC 2021 
+   RealMemory=1 AllocMem=0 FreeMem=105955 Sockets=96 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   BootTime=2022-01-10T16:42:30 SlurmdStartTime=2022-01-10T16:42:44
+   CfgTRES=cpu=96,mem=1M,billing=96
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=snow01 Arch=aarch64 CoresPerSocket=20
+   CPUAlloc=0 CPUErr=0 CPUTot=80 CPULoad=0.00
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=192.168.5.95 NodeHostName=snow01 Version=17.11
+   OS=Linux 4.15.0-156-generic #163-Ubuntu SMP Thu Aug 19 23:31:36 UTC 2021 
+   RealMemory=1 AllocMem=0 FreeMem=252434 Sockets=4 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=snow,all 
+   BootTime=2021-11-02T17:12:35 SlurmdStartTime=2021-11-02T17:12:49
+   CfgTRES=cpu=80,mem=1M,billing=80
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=snow02 Arch=aarch64 CoresPerSocket=20
+   CPUAlloc=0 CPUErr=0 CPUTot=80 CPULoad=0.00
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=192.168.5.97 NodeHostName=snow02 Version=17.11
+   OS=Linux 4.15.0-156-generic #163-Ubuntu SMP Thu Aug 19 23:31:36 UTC 2021 
+   RealMemory=1 AllocMem=0 FreeMem=254079 Sockets=4 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=snow,all 
+   BootTime=2021-11-02T17:12:50 SlurmdStartTime=2021-11-02T17:13:04
+   CfgTRES=cpu=80,mem=1M,billing=80
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=thunder01 Arch=aarch64 CoresPerSocket=48
+   CPUAlloc=0 CPUErr=0 CPUTot=96 CPULoad=0.65
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=192.168.5.99 NodeHostName=thunder01 Version=17.11
+   OS=Linux 4.15.0-161-generic #169-Ubuntu SMP Fri Oct 15 13:41:12 UTC 2021 
+   RealMemory=1 AllocMem=0 FreeMem=59785 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=thunder,all 
+   BootTime=2021-11-02T17:13:19 SlurmdStartTime=2021-11-02T17:14:09
+   CfgTRES=cpu=96,mem=1M,billing=96
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=thunder02 Arch=aarch64 CoresPerSocket=48
+   CPUAlloc=0 CPUErr=0 CPUTot=96 CPULoad=0.58
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=192.168.5.92 NodeHostName=thunder02 Version=17.11
+   OS=Linux 4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:20 UTC 2018 
+   RealMemory=1 AllocMem=0 FreeMem=30635 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=thunder,all 
+   BootTime=2022-04-27T11:49:59 SlurmdStartTime=2022-04-27T11:50:48
+   CfgTRES=cpu=96,mem=1M,billing=96
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+

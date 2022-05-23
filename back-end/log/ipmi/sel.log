@@ -1,0 +1,89 @@
+#####
+thunder01
+   1 | 01/19/2017 | 09:01:35 | Processor #0x91 | Presence detected | Asserted
+   2 | 01/19/2017 | 09:01:35 | Power Supply #0x9b | Presence detected | Asserted
+   3 | 01/19/2017 | 09:01:39 | Processor #0x90 | Presence detected | Asserted
+   4 | 01/19/2017 | 09:01:39 | Power Supply #0x9a | Presence detected | Asserted
+   5 | 01/19/2017 | 09:01:45 | System Event | OEM System boot event | Asserted
+   6 | 01/19/2017 | 09:02:00 | System Event | Timestamp Clock Sync | Asserted
+   7 | 07/31/2017 | 23:45:02 | System Event | Timestamp Clock Sync | Asserted
+   8 | 01/19/2017 | 09:01:32 | System Event | OEM System boot event | Asserted
+   9 | 01/19/2017 | 09:01:38 | Processor #0x91 | Presence detected | Asserted
+   a | 01/19/2017 | 09:01:38 | Power Supply #0x9b | Presence detected | Asserted
+   b | 01/19/2017 | 09:01:41 | Processor #0x90 | Presence detected | Asserted
+   c | 01/19/2017 | 09:01:41 | Power Supply #0x9a | Presence detected | Asserted
+   d | 01/19/2017 | 09:01:48 | System Event | Timestamp Clock Sync | Asserted
+   e | 07/31/2017 | 23:54:56 | System Event | Timestamp Clock Sync | Asserted
+   f | 07/31/2017 | 23:56:10 | OEM record c0 | 00b3d1 | cb8002000000
+  10 | 07/31/2017 | 23:59:52 | System Event | OEM System boot event | Asserted
+  11 | 08/01/2017 | 00:06:22 | System Event | OEM System boot event | Asserted
+  12 | 08/01/2017 | 00:06:37 | System Event | Timestamp Clock Sync | Asserted
+  13 | 08/01/2017 | 00:06:41 | System Event | Timestamp Clock Sync | Asserted
+  14 | 08/01/2017 | 00:18:15 | System Event | OEM System boot event | Asserted
+#####
+thunder02
+   1 | 09/25/2016 | 09:20:39 | System Event | OEM System boot event | Asserted
+   2 | 09/25/2016 | 09:20:43 | Processor #0x91 | Presence detected | Asserted
+   3 | 09/25/2016 | 09:20:43 | Power Supply #0x9b | Presence detected | Asserted
+   4 | 09/25/2016 | 09:20:46 | Processor #0x90 | Presence detected | Asserted
+   5 | 09/25/2016 | 09:20:46 | Power Supply #0x9a | Presence detected | Asserted
+   6 | 09/25/2016 | 09:20:55 | System Event | Timestamp Clock Sync | Asserted
+   7 | 05/02/2017 | 23:41:58 | System Event | Timestamp Clock Sync | Asserted
+   8 | 09/25/2016 | 09:20:53 | Processor #0x90 | Presence detected | Asserted
+   9 | 09/25/2016 | 09:20:53 | Processor #0x91 | Presence detected | Asserted
+   a | 09/25/2016 | 09:20:57 | Power Supply #0x9a | Presence detected | Asserted
+   b | 09/25/2016 | 09:20:57 | Power Supply #0x9b | Presence detected | Asserted
+   c | 09/25/2016 | 09:21:17 | System Event | OEM System boot event | Asserted
+   d | 09/25/2016 | 09:21:32 | System Event | Timestamp Clock Sync | Asserted
+   e | 05/02/2017 | 11:19:08 | System Event | Timestamp Clock Sync | Asserted
+   f | 05/02/2017 | 11:39:20 | System Event | OEM System boot event | Asserted
+  10 | 05/02/2017 | 11:39:40 | System Event | Timestamp Clock Sync | Asserted
+  11 | 05/02/2017 | 11:39:45 | System Event | Timestamp Clock Sync | Asserted
+  12 | 05/02/2017 | 11:57:56 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  13 | 05/02/2017 | 12:41:31 | System Event | OEM System boot event | Asserted
+  14 | 05/02/2017 | 12:41:47 | System Event | Timestamp Clock Sync | Asserted
+#####
+snow01
+41b0 | 05/19/2022 | 04:56:38 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+41b1 | 05/19/2022 | 04:56:38 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+41b2 | 05/19/2022 | 04:57:02 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+41b3 | 05/19/2022 | 04:57:02 | Power Unit #0xd2 | Upper Critical going high | Asserted
+41b4 | 05/19/2022 | 04:57:14 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+41b5 | 05/19/2022 | 04:57:14 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+41b6 | 05/19/2022 | 04:57:36 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+41b7 | 05/19/2022 | 04:57:36 | Power Unit #0xd2 | Upper Critical going high | Asserted
+41b8 | 05/19/2022 | 04:57:50 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+41b9 | 05/19/2022 | 04:57:50 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+41ba | 05/19/2022 | 04:58:14 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+41bb | 05/19/2022 | 04:58:14 | Power Unit #0xd2 | Upper Critical going high | Asserted
+41bc | 05/19/2022 | 04:58:26 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+41bd | 05/19/2022 | 04:58:26 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+41be | 05/19/2022 | 04:58:49 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+41bf | 05/19/2022 | 04:58:49 | Power Unit #0xd2 | Upper Critical going high | Asserted
+41c0 | 05/19/2022 | 04:59:38 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+41c1 | 05/19/2022 | 04:59:38 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+41c2 | 05/19/2022 | 05:00:14 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+41c3 | 05/19/2022 | 05:00:14 | Power Unit #0xd2 | Upper Critical going high | Asserted
+#####
+snow02
+18b1 | 05/13/2022 | 20:36:21 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+18b2 | 05/13/2022 | 20:36:21 | Power Unit #0xd2 | Upper Critical going high | Asserted
+18b3 | 05/13/2022 | 20:36:35 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+18b4 | 05/13/2022 | 20:36:35 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+18b5 | 05/13/2022 | 20:41:08 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+18b6 | 05/13/2022 | 20:41:20 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+18b7 | 05/13/2022 | 20:53:47 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+18b8 | 05/13/2022 | 20:53:59 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+18b9 | 05/13/2022 | 21:08:22 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+18ba | 05/13/2022 | 21:08:22 | Power Unit #0xd2 | Upper Critical going high | Asserted
+18bb | 05/13/2022 | 21:08:35 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+18bc | 05/13/2022 | 21:08:35 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+18bd | 05/13/2022 | 21:09:31 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+18be | 05/13/2022 | 21:09:31 | Power Unit #0xd2 | Upper Critical going high | Asserted
+18bf | 05/13/2022 | 21:09:43 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+18c0 | 05/13/2022 | 21:09:43 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+18c1 | 05/13/2022 | 21:12:21 | Power Unit #0xd2 | Upper Non-critical going high | Asserted
+18c2 | 05/13/2022 | 21:12:21 | Power Unit #0xd2 | Upper Critical going high | Asserted
+18c3 | 05/13/2022 | 21:12:34 | Power Unit #0xd2 | Upper Critical going high | Deasserted
+18c4 | 05/13/2022 | 21:12:34 | Power Unit #0xd2 | Upper Non-critical going high | Deasserted
+#####

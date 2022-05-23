@@ -5,6 +5,7 @@ require('dotenv').config()
 
 const router = express.Router()
 
+
 router.get("/line" , (req ,res) => {
 
     const xmlFile = fs.readFileSync(`${process.env.FILE_PATH}/ganglia/ganglia.xml` , 'utf8')

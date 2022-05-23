@@ -17,12 +17,12 @@ export default {
     return {
       options: {  
             title: {
-              display: true,
+              display: false,
               text: this.title
             },
             legend: {
               display: true,
-              position: 'bottom',
+              position: 'right',
             },
             responsive: true, 
             maintainAspectRatio: false, 
