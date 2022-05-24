@@ -61,18 +61,28 @@
 
 
     </v-navigation-drawer> -->
-    <v-main class="grey lighten-2">
+    <v-main class="grey lighten-3">
       <Header/>
       <router-view/>
+      <Move/>
+      <Footer/>
+
     </v-main>
   </v-app>
 </template>
 
 <script>
+import Footer from './components/commons/Footer.vue';
 import Header from './components/commons/Header.vue';
+import Move from './components/commons/Move.vue';
 
 export default {
-  components: { Header },
+  components: { 
+    Header,
+    Move,
+    Footer
+  },
+  
   name: 'App',
 
   data: () => ({

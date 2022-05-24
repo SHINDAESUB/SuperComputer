@@ -1,21 +1,24 @@
 <template>
   <section>
-    <Slurm
-      :runtime="time"
-      :jobs="jobs"
-      :idle="idle"
-      :total="total"
-      :use="use"
-      :persent="persent"
-    />
-    <Ganglia
-      :nodeData="nodeData"
-      :csnowData="csnowData"
-      :thunderData="thunderData"
-    />
-    <Ipmi
-      :state="state"
-    />
+    <v-container >
+      <h1 class="py-2 text-h3 font-weight-bold"> Dashboard </h1>
+      <Slurm
+        :runtime="time"
+        :jobs="jobs"
+        :idle="idle"
+        :total="total"
+        :use="use"
+        :persent="persent"
+      />
+      <Ganglia
+        :nodeData="nodeData"
+        :csnowData="csnowData"
+        :thunderData="thunderData"
+      />
+      <Ipmi
+        :state="state"
+      />
+    </v-container>
   </section>
 </template>
 
@@ -26,9 +29,9 @@ import slurm from '../services/slurm'
 import LineChart from '../components/charts/LineChart.vue'
 import DoughnutChart from '../components/charts/DoughnutChart.vue'
 
-import Ganglia from '../components/dashboard/Ganglia.vue'
-import Slurm from '../components/dashboard/Slurm.vue' 
-import Ipmi from '../components/dashboard/Ipmi.vue'
+import Ganglia from '@/components/dashboard/Ganglia.vue'
+import Slurm from '@/components/dashboard/Slurm.vue'
+import Ipmi from '@/components/dashboard/Ipmi.vue'
 
 export default {
   name: 'Home',
@@ -63,6 +66,7 @@ export default {
       polling: null,
     }
   },
+
   created() {
     this.getData()
     this.polling = setInterval(this.getData, 2000);
@@ -82,7 +86,7 @@ export default {
     async runtime(){
         try {
           let result = await slurm.runtime()
-          this.time = result.runtime
+          this.time = Number(result.runtime)
         } catch (e) {
           console.error(e)
         }

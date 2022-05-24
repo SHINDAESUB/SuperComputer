@@ -1,10 +1,11 @@
 <template>
-    <v-container  >
-        <h4 class="pa-2 text-h4 font-weight-bold">Slurm</h4>
+    <article>
+        <h2 class="py-2 text-h4 font-weight-bold">Slurm</h2>
         <v-row>
             <v-col           
                 cols="12"
-                md="4"
+                md="6"
+                lg="4"
             >
                 <v-card>
                     <v-card-title class="text-h5">Runtime</v-card-title>         
@@ -18,7 +19,8 @@
             </v-col>
             <v-col           
                 cols="12"
-                md="4"
+                md="6"
+                lg="4"
             >
                 <v-card>
                     <v-card-title class="text-h5">Running Jobs</v-card-title>           
@@ -32,7 +34,8 @@
             </v-col>
             <v-col           
                 cols="12"
-                md="4"
+                md="12"
+                lg="4"
             >
                 <v-card>
                     <v-card-title class=" d-flex justify-space-between">
@@ -40,6 +43,7 @@
                         <span class="subtitle-2">
                             <v-chip
                                 label
+                                x-small
                             >
                                 IDLE :
                                 {{idle}}
@@ -48,6 +52,7 @@
                                 class="mx-2"
                                 color="green lighten-2"
                                 label
+                                x-small
                             >
                                 USE :
                                 {{use}}
@@ -55,6 +60,7 @@
                             <v-chip
                                 color="primary"
                                 label
+                                x-small
                             >
                                 TOTAL :
                                 {{total}}
@@ -84,7 +90,7 @@
                 </v-card>
             </v-col>
         </v-row>
-    </v-container>
+    </article>
 </template>
 
 <script>

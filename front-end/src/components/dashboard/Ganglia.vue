@@ -1,13 +1,14 @@
 <template>
-    <v-container  >
-        <h4 class="pa-2 text-h4 font-weight-bold" id="gnaglia">Ganglia</h4>
+    <article>
+        <h2 class="py-2 text-h4 font-weight-bold" >
+            Ganglia
+        </h2>
         <v-row>
             <v-col
                 cols="12"
                 md="12"
             >
-                <h5 class="text-h5 ml-2">Load Comparison</h5>
-
+                <h3 class="text-h5 ml-2">Load Comparison</h3>
             </v-col>
             <v-col           
                 cols="12"
@@ -29,7 +30,7 @@
                 cols="12"
                 md="12"
             >
-                <h5 class="text-h5 ml-2">CPU Usage</h5>
+                <h3 class="text-h5 ml-2">CPU Usage</h3>
             </v-col>
             
             <v-col           
@@ -63,7 +64,7 @@
 
             </v-col>
         </v-row>
-    </v-container>
+    </article>
 </template>
 
 <script>
