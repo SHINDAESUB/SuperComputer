@@ -1,8 +1,10 @@
 <template>
   <section>
     <v-container >
-      <h1 class="py-2 text-h3 font-weight-bold"> Dashboard </h1>
+      <h1 class="py-2 text-h3 font-weight-bold" id="dashboard"> Dashboard </h1>
+      
       <Slurm
+        class="mt-6"
         :runtime="time"
         :jobs="jobs"
         :idle="idle"
@@ -10,25 +12,29 @@
         :use="use"
         :persent="persent"
       />
+
       <Ganglia
+        class="mt-6"
         :nodeData="nodeData"
         :csnowData="csnowData"
         :thunderData="thunderData"
       />
+
       <Ipmi
+        class="mt-6"
         :state="state"
-      />
+      />      
     </v-container>
   </section>
 </template>
 
 <script>
-import ganglia from '../services/ganglia'
-import ipmi from '../services/ipmi'
-import slurm from '../services/slurm'
-import LineChart from '../components/charts/LineChart.vue'
-import DoughnutChart from '../components/charts/DoughnutChart.vue'
+//서비스
+import ganglia from '@/services/ganglia'
+import ipmi from '@/services/ipmi'
+import slurm from '@/services/slurm'
 
+//컴포넌트
 import Ganglia from '@/components/dashboard/Ganglia.vue'
 import Slurm from '@/components/dashboard/Slurm.vue'
 import Ipmi from '@/components/dashboard/Ipmi.vue'
@@ -37,8 +43,6 @@ export default {
   name: 'Home',
 
   components: {
-    LineChart,
-    DoughnutChart,
     Slurm,
     Ganglia,
     Ipmi
@@ -46,7 +50,6 @@ export default {
 
   data () {
     return {
-
       time:0,
       jobs:0,
       idle:0,

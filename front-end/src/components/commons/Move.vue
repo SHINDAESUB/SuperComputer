@@ -26,21 +26,20 @@ export default {
     },
 
     mounted(){
-
-        this.scroll();  
+        this.scroll();  //window 위치를 체크
     },
 
     
     methods: {
 
-        toTop(){
+        toTop(){ //최상단으로 이동
             document.body.scrollTop = 0
             document.documentElement.scrollTop = 0
         },
 
         scroll() {  
             window.onscroll = () => {
-                window.pageYOffset >= 25 ? this.hidden = false : this.hidden = true
+                window.pageYOffset >= 25 ? this.hidden = false : this.hidden = true  //스크롤 위치가 25 일경우 보이게 함
             }
         }
     },

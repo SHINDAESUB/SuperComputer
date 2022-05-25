@@ -1,6 +1,6 @@
 <template>
     <article>
-        <h2 class="py-2 text-h4 font-weight-bold" id="test">Ipmi</h2>
+        <h2 class="py-2 text-h4 font-weight-bold" id="ipmi">Ipmi</h2>
         <v-row>
             <v-col
                 cols="12"

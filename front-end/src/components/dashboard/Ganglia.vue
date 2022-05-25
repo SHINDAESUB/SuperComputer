@@ -1,6 +1,6 @@
 <template>
     <article>
-        <h2 class="py-2 text-h4 font-weight-bold" >
+        <h2 class="py-2 text-h4 font-weight-bold" id="ganglia" >
             Ganglia
         </h2>
         <v-row>
@@ -68,6 +68,7 @@
 </template>
 
 <script>
+//차트 컴포넌트 사용
 import LineChart from '../charts/LineChart.vue'
 import DoughnutChart from '../charts/DoughnutChart.vue'
 

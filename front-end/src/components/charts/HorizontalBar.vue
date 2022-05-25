@@ -49,7 +49,7 @@ export default {
             }]
           },
           legend: {
-            display: true, /* false = 범례를 숨긴다.  */
+            display: false, /* false = 범례를 숨긴다.  */
             position: 'bottom',
             // labels: {
             //     fontSize: 12,

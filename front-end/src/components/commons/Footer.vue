@@ -1,6 +1,8 @@
 <template>
   <v-footer
-    color="grey lighten-2"
+    color="grey lighten-2 relative"
+    width="100%"
+        
   >
     <v-card
         color="grey lighten-2"
