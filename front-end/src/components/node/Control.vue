@@ -72,7 +72,7 @@
                                         <div>                                       
                                             <strong class="mr-2">Hardware Reset </strong>
                                             <v-icon color="green">
-                                                mdi-cog-play-outline
+                                                mdi-refresh
                                             </v-icon>
                                         </div>
                                     </template>
@@ -85,7 +85,7 @@
                                         <div>
                                             <strong class="mr-2">Software Reset (Cycle)</strong>
                                             <v-icon color="green">
-                                                mdi-application-cog-outline
+                                                mdi-refresh
                                             </v-icon>
                                         </div>
                                     </template>

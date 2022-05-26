@@ -1,7 +1,7 @@
 <template>
   <section>
     <v-container >
-      <h1 class="py-2 text-h3 font-weight-bold" id="node">Report</h1>
+      <h1 class="py-2 text-h3 font-weight-bold" id="node">Report <v-btn icon @click="directory()"> <v-icon>mdi-refresh</v-icon></v-btn></h1>
       
       <Directory
         class="mt-6"

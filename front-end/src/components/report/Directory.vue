@@ -235,7 +235,7 @@ import out  from '@/services/out'
 
 export default {
     props:{
-        folder:Array
+        folder:Array,
     },
 
     data() {
