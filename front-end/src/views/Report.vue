@@ -1,5 +1,19 @@
 <template>
-  <v-container class="report"  >
+  <section>
+    <v-container >
+      <h1 class="py-2 text-h3 font-weight-bold" id="node">Report</h1>
+      
+      <Control
+        class="mt-6"
+        :nodes="nodes"
+        :states="states"
+      />
+
+    </v-container>
+  </section>
+
+
+  <!-- <v-container  >
     <v-row class="d-flex flex-row align-center justify-center ">
       <v-col cols="12">
         <v-card
@@ -247,7 +261,7 @@
         </v-card>
       </v-col>
     </v-row>
-  </v-container>
+  </v-container> -->
 </template>
 
 <script>
@@ -390,7 +404,5 @@ export default {
 </script>
 
 <style lang="scss">
-.report{
-  height: 100vh;
-}
+
 </style>
