@@ -43,8 +43,8 @@
                                     <template v-slot:label>
                                         <div>
                                             <strong>Power On </strong>
-                                            <v-icon color="grey">
-                                                mdi-toggle-switch-off-outline
+                                            <v-icon color="primary">
+                                                mdi-toggle-switch-outline
                                             </v-icon>
                                         </div>
                                     </template>
@@ -57,8 +57,8 @@
                                     <template v-slot:label>
                                         <div>
                                             <strong class="mr-2">Power Off </strong>
-                                            <v-icon color="primary">
-                                                mdi-toggle-switch-outline
+                                            <v-icon color="grey">
+                                                mdi-toggle-switch-off-outline
                                             </v-icon>
                                         </div>
                                     </template>
