@@ -99,7 +99,7 @@
                 </v-expansion-panels>
             </v-card-text>
         </v-card>
-
+        
     </article>
 </template>
 
