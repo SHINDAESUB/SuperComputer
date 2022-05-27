@@ -69,7 +69,7 @@
                         </v-card-title>        
                     <v-card-text class="d-flex  black--text">
                         <v-row>
-                            <v-col cols="9">
+                            <v-col cols="8">
                                 <v-progress-linear
                                     color="green darken-2"
                                     background-color="grey lighten-2"
@@ -80,7 +80,7 @@
                                     @click.prevent.self
                                 />
                             </v-col>
-                            <v-col cols="3" class="text-right">
+                            <v-col cols="4" class="text-right">
                                 <span class="text-h3  mr-2">{{persent}}</span>
                                 <sub class="text-h6 font-weight-light">%</sub>
                             </v-col>
